@@ -1,6 +1,6 @@
 import streamlit as st
 from backend.crop_engine import get_crops
-from backend.weather import get_weather
+from backend.weather_service import get_weather
 
 st.title("🌾 AgriAdvisor Bihar")
 

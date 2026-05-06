@@ -1,0 +1,38 @@
+Crop: Maize
+
+Season:
+- Grown in Kharif, Rabi, and Zaid seasons
+- Main sowing time: June to July
+
+Climate:
+- Temperature: 18°C to 27°C
+- Requires moderate rainfall and sunlight
+
+Soil:
+- Well-drained fertile loamy soil is best
+- Avoid waterlogged areas
+
+Seed:
+- Use certified hybrid seeds
+- Common varieties: DHM-117, HQPM-1
+
+Fertilizer:
+- Requires Nitrogen, Phosphorus, and Potassium
+- Apply nitrogen in split doses
+
+Irrigation:
+- Irrigate during flowering and grain filling stages
+- Avoid excess water
+
+Common Pests:
+- Fall armyworm
+- Stem borer
+
+Diseases:
+- Leaf blight
+- Downy mildew
+
+Advice:
+- Monitor for pest attacks regularly
+- Maintain proper spacing between plants
+- Use crop rotation to reduce disease
