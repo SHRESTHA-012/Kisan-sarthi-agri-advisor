@@ -1,10 +1,11 @@
 import streamlit as st
 from backend.crop_engine import get_crops
 from backend.weather_service import get_weather
+from backend.chatbot import generate_response
 
 st.title("🌾 AgriAdvisor Bihar")
 
-user_input = st.text_input("प्रश्न पूछें")
+user_input = st.text_input("कृषि से जुड़ा प्रश्न पूछें")
 
 if user_input:
     st.write("AI:", "यह एक परीक्षण उत्तर है")
