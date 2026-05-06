@@ -1,0 +1,39 @@
+Crop: Rice
+
+Season:
+- Kharif crop
+- Sowing time: June to July
+- Harvest time: October to November
+
+Climate:
+- Temperature: 20°C to 35°C
+- Requires high humidity and rainfall
+
+Water:
+- Needs standing water in field
+- Maintain water level during growth
+
+Soil:
+- Clayey soil is ideal
+- Fields should retain water
+
+Seed:
+- Use high-yield varieties
+- Examples: Swarna, IR64
+
+Fertilizer:
+- Use NPK fertilizers
+- Apply nitrogen in multiple stages
+
+Common Pests:
+- Stem borer
+- Brown planthopper
+
+Diseases:
+- Blast disease
+- Bacterial leaf blight
+
+Advice:
+- Maintain proper drainage
+- Avoid excessive fertilizer use
+- Use resistant varieties

@@ -1,0 +1,25 @@
+Topic: Weather-based Farming Advice
+
+Rain:
+- Ensure proper drainage in heavy rain
+- Avoid waterlogging
+
+Drought:
+- Use drought-resistant crops
+- Practice water conservation
+
+Cold:
+- Protect crops from frost
+- Use light irrigation to reduce damage
+
+Heat:
+- Irrigate crops regularly
+- Use mulching to retain moisture
+
+Wind:
+- Protect crops using barriers
+- Avoid spraying during strong winds
+
+Advice:
+- Check weather forecast regularly
+- Plan sowing and irrigation accordingly

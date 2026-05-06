@@ -1,0 +1,28 @@
+Topic: Fertilizers
+
+Types:
+- Organic fertilizers: compost, manure
+- Chemical fertilizers: urea, DAP, potash
+
+Nutrients:
+- Nitrogen (N): promotes leaf growth
+- Phosphorus (P): helps root development
+- Potassium (K): improves overall plant health
+
+Application:
+- Apply based on soil test
+- Use split application for better results
+
+Organic Methods:
+- Use compost and green manure
+- Improves soil structure
+
+Common Fertilizers:
+- Urea
+- DAP (Diammonium Phosphate)
+- MOP (Muriate of Potash)
+
+Advice:
+- Avoid excessive fertilizer use
+- Apply at correct time
+- Mix properly in soil

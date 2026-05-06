@@ -1,0 +1,39 @@
+Crop: Wheat
+
+Season:
+- Rabi crop
+- Sowing time: October to December
+- Harvest time: March to April
+
+Climate:
+- Ideal temperature: 10°C to 25°C
+- Requires cool growing season and warm harvesting
+
+Soil:
+- Well-drained loamy soil is best
+- Avoid waterlogged fields
+
+Seed:
+- Use certified seeds
+- Common varieties: HD-2967, PBW-343
+
+Fertilizer:
+- Nitrogen (N), Phosphorus (P), Potassium (K)
+- Apply urea in split doses
+
+Irrigation:
+- First irrigation after 20-25 days
+- Total 4-5 irrigations required
+
+Common Pests:
+- Aphids
+- Termites
+
+Diseases:
+- Rust
+- Smut
+
+Advice:
+- Avoid over-irrigation
+- Use proper spacing between plants
+- Monitor pest attacks regularly
