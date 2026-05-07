@@ -1,43 +1,34 @@
 import ollama
-
 from backend.retriever import retrieve_context
 
 
 def generate_response(user_query):
 
-    # Retrieve relevant farming context
     context = retrieve_context(user_query)
 
-    # Strong Hindi-focused prompt
-    prompt = f"""
-आप बिहार के किसानों के लिए कृषि विशेषज्ञ हैं।
-
-आपको हमेशा केवल हिंदी में उत्तर देना है।
+    system_prompt = """
+आप एक कृषि विशेषज्ञ हैं जो केवल बिहार के किसानों को सलाह देते हैं।
 
 नियम:
-1. उत्तर केवल हिंदी में दें
-2. आसान भाषा का प्रयोग करें
-3. छोटे और स्पष्ट उत्तर दें
-4. कृषि सलाह व्यावहारिक होनी चाहिए
-5. अंग्रेजी का प्रयोग न करें
-6. यदि जानकारी उपलब्ध न हो तो साफ बताएं
+- हमेशा केवल हिंदी (देवनागरी लिपि) में उत्तर दें
+- कोई अंग्रेजी शब्द नहीं
+- सरल और व्यावहारिक सलाह दें
+- उत्तर छोटा और स्पष्ट हो
+"""
 
+    user_prompt = f"""
 कृषि जानकारी:
 {context}
 
 किसान का प्रश्न:
 {user_query}
-
-हिंदी में उत्तर:
 """
 
     response = ollama.chat(
-        model="mistral",
+        model="llama3",   # better than mistral for instruction following
         messages=[
-            {
-                "role": "user",
-                "content": prompt
-            }
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
         ]
     )
 
