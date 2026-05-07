@@ -1,10 +1,30 @@
 import ollama
 from backend.retriever import retrieve_context
+from backend.crop_engine import get_crops
+from backend.weather_service import get_weather
 
 
 def generate_response(user_query):
 
-    context = retrieve_context(user_query)
+    # Define context variables properly
+    district = "Patna"
+    season = "Kharif"
+
+    # Get dynamic data
+    crops = get_crops(district, season)
+    weather = get_weather(district)
+
+    # Retrieve knowledge
+    retrieved_context = retrieve_context(user_query)
+
+    # Combine everything
+    context = f"""
+कृषि जानकारी:
+{retrieved_context}
+
+उपलब्ध फसलें: {crops}
+मौसम: {weather}
+"""
 
     system_prompt = """
 आप एक कृषि विशेषज्ञ हैं जो केवल बिहार के किसानों को सलाह देते हैं।
@@ -17,7 +37,6 @@ def generate_response(user_query):
 """
 
     user_prompt = f"""
-कृषि जानकारी:
 {context}
 
 किसान का प्रश्न:
@@ -25,7 +44,7 @@ def generate_response(user_query):
 """
 
     response = ollama.chat(
-        model="llama3",   # better than mistral for instruction following
+        model="llama3",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
