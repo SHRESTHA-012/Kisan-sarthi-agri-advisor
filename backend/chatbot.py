@@ -59,7 +59,7 @@ def generate_response(user_query, session=None):
 
     response = ollama.chat(
         model="mistral",
-        options = {"num_ctx": 2048}
+        options = {"num_ctx": 2048},
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
