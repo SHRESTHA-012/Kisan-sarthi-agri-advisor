@@ -1,0 +1,508 @@
+{
+  "metadata": {
+    "state": "Bihar",
+    "last_updated": "2025-04-01",
+    "version": "1.0",
+    "source": "Bihar Agriculture Department / ICAR"
+  },
+  "seasons": {
+    "kharif": {
+      "start_month": 6,
+      "end_month": 11,
+      "description": "Monsoon season crop (June–November)"
+    },
+    "rabi": {
+      "start_month": 11,
+      "end_month": 4,
+      "description": "Winter season crop (November–April)"
+    },
+    "zaid": {
+      "start_month": 3,
+      "end_month": 6,
+      "description": "Summer season crop (March–June)"
+    }
+  },
+  "crops": [
+    {
+      "id": "C001",
+      "name_en": "Paddy (Rice)",
+      "name_hi": "धान",
+      "name_bho": "धान",
+      "season": "kharif",
+      "category": "cereal",
+      "popular_varieties": [
+        {
+          "variety": "Rajendra Sweta",
+          "duration_days": 130,
+          "yield_qtl_per_acre": 22,
+          "features": "High yielding, blast resistant"
+        },
+        {
+          "variety": "Sita",
+          "duration_days": 115,
+          "yield_qtl_per_acre": 20,
+          "features": "Medium duration, suitable for lowlands"
+        },
+        {
+          "variety": "MTU-7029 (Swarna)",
+          "duration_days": 145,
+          "yield_qtl_per_acre": 25,
+          "features": "Most popular in Bihar, good taste"
+        },
+        {
+          "variety": "Pusa-44",
+          "duration_days": 155,
+          "yield_qtl_per_acre": 28,
+          "features": "High yield, long grain"
+        }
+      ],
+      "sowing": {
+        "nursery_month": [5, 6],
+        "transplanting_month": [7, 8],
+        "method": "Transplanting / Direct Seeding",
+        "seed_rate_kg_per_acre": 8,
+        "row_spacing_cm": 20,
+        "plant_spacing_cm": 15
+      },
+      "soil": {
+        "type": ["clay", "loam", "clay loam"],
+        "ph_range": [5.5, 7.0],
+        "water_requirement": "high",
+        "notes": "Prefers low-lying fields with good water retention"
+      },
+      "fertilizer": {
+        "basal": {
+          "DAP_kg_per_acre": 25,
+          "MOP_kg_per_acre": 15
+        },
+        "top_dressing": [
+          { "stage": "21 days after transplanting", "urea_kg_per_acre": 25 },
+          { "stage": "45 days after transplanting", "urea_kg_per_acre": 20 }
+        ],
+        "micronutrients": ["Zinc Sulphate (5 kg/acre)"]
+      },
+      "irrigation": {
+        "total_irrigations": "Continuous flooding or AWD",
+        "critical_stages": ["tillering", "panicle initiation", "grain filling"]
+      },
+      "common_pests": ["P001", "P002", "P003"],
+      "common_diseases": ["D001", "D002"],
+      "harvesting": {
+        "indicator": "80% grains golden yellow",
+        "method": "Manual or combine harvester",
+        "threshing": "Mechanical thresher"
+      },
+      "districts_suitable": ["Patna", "Vaishali", "Muzaffarpur", "Darbhanga", "Samastipur", "Bhagalpur", "Purnia", "Champaran"],
+      "msp_2024_25_per_qtl": 2300
+    },
+    {
+      "id": "C002",
+      "name_en": "Wheat",
+      "name_hi": "गेहूं",
+      "name_bho": "गोधुम",
+      "season": "rabi",
+      "category": "cereal",
+      "popular_varieties": [
+        {
+          "variety": "HD-2967",
+          "duration_days": 120,
+          "yield_qtl_per_acre": 20,
+          "features": "High yielding, rust resistant"
+        },
+        {
+          "variety": "PBW-550",
+          "duration_days": 115,
+          "yield_qtl_per_acre": 18,
+          "features": "Early maturing"
+        },
+        {
+          "variety": "HI-8498 (Malav Shakti)",
+          "duration_days": 125,
+          "yield_qtl_per_acre": 22,
+          "features": "High protein, drought tolerant"
+        }
+      ],
+      "sowing": {
+        "optimal_period": "15 November – 15 December",
+        "late_sowing_varieties": ["K-307", "NW-1014"],
+        "seed_rate_kg_per_acre": 40,
+        "row_spacing_cm": 22.5,
+        "depth_cm": 5
+      },
+      "soil": {
+        "type": ["loam", "sandy loam", "clay loam"],
+        "ph_range": [6.0, 7.5],
+        "water_requirement": "medium",
+        "notes": "Well-drained fertile soils preferred"
+      },
+      "fertilizer": {
+        "basal": {
+          "DAP_kg_per_acre": 50,
+          "MOP_kg_per_acre": 20
+        },
+        "top_dressing": [
+          { "stage": "1st irrigation (20-25 days)", "urea_kg_per_acre": 30 },
+          { "stage": "2nd irrigation (40-45 days)", "urea_kg_per_acre": 20 }
+        ],
+        "micronutrients": ["Zinc Sulphate (5 kg/acre)"]
+      },
+      "irrigation": {
+        "total_irrigations": 6,
+        "critical_stages": ["crown root initiation", "tillering", "jointing", "flowering", "grain filling", "dough stage"]
+      },
+      "common_pests": ["P004", "P005"],
+      "common_diseases": ["D003", "D004"],
+      "harvesting": {
+        "indicator": "Grains hard, moisture <20%",
+        "method": "Combine harvester",
+        "best_time": "April"
+      },
+      "districts_suitable": ["Patna", "Gaya", "Nawada", "Rohtas", "Buxar", "Bhojpur", "Saran", "Muzaffarpur"],
+      "msp_2024_25_per_qtl": 2275
+    },
+    {
+      "id": "C003",
+      "name_en": "Maize",
+      "name_hi": "मक्का",
+      "name_bho": "मकई",
+      "season": "kharif",
+      "category": "cereal",
+      "popular_varieties": [
+        {
+          "variety": "DKC-9141 (Hybrid)",
+          "duration_days": 95,
+          "yield_qtl_per_acre": 35,
+          "features": "High yielding hybrid, drought tolerant"
+        },
+        {
+          "variety": "P-3396 (Hybrid)",
+          "duration_days": 90,
+          "yield_qtl_per_acre": 32,
+          "features": "Popular hybrid, good grain quality"
+        },
+        {
+          "variety": "Vivek-9 (Composite)",
+          "duration_days": 75,
+          "yield_qtl_per_acre": 22,
+          "features": "Early, high altitude adaptable"
+        }
+      ],
+      "sowing": {
+        "optimal_period": "June 15 – July 15",
+        "seed_rate_kg_per_acre": 8,
+        "row_spacing_cm": 60,
+        "plant_spacing_cm": 20,
+        "depth_cm": 4
+      },
+      "soil": {
+        "type": ["loam", "sandy loam", "silt loam"],
+        "ph_range": [6.0, 7.5],
+        "water_requirement": "medium",
+        "notes": "Does not tolerate waterlogging"
+      },
+      "fertilizer": {
+        "basal": {
+          "DAP_kg_per_acre": 40,
+          "MOP_kg_per_acre": 20
+        },
+        "top_dressing": [
+          { "stage": "V4 (4-leaf stage)", "urea_kg_per_acre": 30 },
+          { "stage": "V8 (knee high)", "urea_kg_per_acre": 30 }
+        ]
+      },
+      "irrigation": {
+        "total_irrigations": 5,
+        "critical_stages": ["germination", "knee high", "tasseling", "silking", "grain filling"]
+      },
+      "common_pests": ["P006", "P007"],
+      "common_diseases": ["D005"],
+      "harvesting": {
+        "indicator": "Husk dry, grain moisture 20-25%",
+        "method": "Manual or combine harvester"
+      },
+      "districts_suitable": ["Kaimur", "Rohtas", "Aurangabad", "Gaya", "Nawada", "Jamui"],
+      "msp_2024_25_per_qtl": 2090
+    },
+    {
+      "id": "C004",
+      "name_en": "Lentil (Masur)",
+      "name_hi": "मसूर",
+      "name_bho": "मसुरी",
+      "season": "rabi",
+      "category": "pulse",
+      "popular_varieties": [
+        {
+          "variety": "K-75",
+          "duration_days": 120,
+          "yield_qtl_per_acre": 8,
+          "features": "Popular, bold seeded"
+        },
+        {
+          "variety": "PL-8",
+          "duration_days": 115,
+          "yield_qtl_per_acre": 10,
+          "features": "High yield, wilt resistant"
+        }
+      ],
+      "sowing": {
+        "optimal_period": "15 October – 15 November",
+        "seed_rate_kg_per_acre": 15,
+        "row_spacing_cm": 30,
+        "depth_cm": 4
+      },
+      "soil": {
+        "type": ["loam", "clay loam"],
+        "ph_range": [6.0, 8.0],
+        "water_requirement": "low",
+        "notes": "Can be grown on receding flood water moisture"
+      },
+      "fertilizer": {
+        "basal": {
+          "DAP_kg_per_acre": 25,
+          "MOP_kg_per_acre": 10
+        },
+        "top_dressing": [],
+        "biofertilizer": ["Rhizobium inoculation before sowing"]
+      },
+      "irrigation": {
+        "total_irrigations": 2,
+        "critical_stages": ["flowering", "pod filling"]
+      },
+      "common_pests": ["P008"],
+      "common_diseases": ["D006"],
+      "harvesting": {
+        "indicator": "Lower pods turn yellow-brown",
+        "method": "Manual cutting, sun drying, threshing"
+      },
+      "districts_suitable": ["Patna", "Vaishali", "Muzaffarpur", "Darbhanga", "Sitamarhi", "Sheohar"],
+      "msp_2024_25_per_qtl": 6425
+    },
+    {
+      "id": "C005",
+      "name_en": "Mustard",
+      "name_hi": "सरसों",
+      "name_bho": "सरसों",
+      "season": "rabi",
+      "category": "oilseed",
+      "popular_varieties": [
+        {
+          "variety": "Pusa Tarak",
+          "duration_days": 110,
+          "yield_qtl_per_acre": 8,
+          "features": "High oil content, white rust resistant"
+        },
+        {
+          "variety": "Pusa Mahak",
+          "duration_days": 115,
+          "yield_qtl_per_acre": 10,
+          "features": "Aphid tolerant, good yield"
+        },
+        {
+          "variety": "Varuna (T-59)",
+          "duration_days": 120,
+          "yield_qtl_per_acre": 9,
+          "features": "Old reliable variety, widely grown"
+        }
+      ],
+      "sowing": {
+        "optimal_period": "1 October – 20 October",
+        "seed_rate_kg_per_acre": 1.5,
+        "row_spacing_cm": 45,
+        "depth_cm": 3
+      },
+      "soil": {
+        "type": ["loam", "sandy loam"],
+        "ph_range": [6.0, 7.5],
+        "water_requirement": "low-medium"
+      },
+      "fertilizer": {
+        "basal": {
+          "DAP_kg_per_acre": 25,
+          "MOP_kg_per_acre": 15,
+          "sulphur_kg_per_acre": 8
+        },
+        "top_dressing": [
+          { "stage": "30 days after sowing", "urea_kg_per_acre": 25 }
+        ]
+      },
+      "irrigation": {
+        "total_irrigations": 2,
+        "critical_stages": ["flowering", "pod development"]
+      },
+      "common_pests": ["P009"],
+      "common_diseases": ["D007"],
+      "harvesting": {
+        "indicator": "80% pods turn yellow",
+        "method": "Cutting, drying, threshing"
+      },
+      "districts_suitable": ["Patna", "Rohtas", "Bhojpur", "Buxar", "Saran", "Siwan"],
+      "msp_2024_25_per_qtl": 5950
+    },
+    {
+      "id": "C006",
+      "name_en": "Sugarcane",
+      "name_hi": "गन्ना",
+      "name_bho": "ऊख / पेड़ी",
+      "season": "annual",
+      "category": "cash_crop",
+      "popular_varieties": [
+        {
+          "variety": "Co-0238",
+          "duration_months": 12,
+          "yield_ton_per_acre": 40,
+          "features": "Most popular, high sucrose"
+        },
+        {
+          "variety": "CoSe-01434",
+          "duration_months": 12,
+          "yield_ton_per_acre": 38,
+          "features": "Red rot resistant"
+        }
+      ],
+      "sowing": {
+        "optimal_period": "February – March (spring), October (autumn)",
+        "seed_rate_tons_per_acre": 2.5,
+        "row_spacing_cm": 90,
+        "method": "Sett planting (2-3 budded setts)"
+      },
+      "soil": {
+        "type": ["loam", "clay loam", "silt loam"],
+        "ph_range": [6.5, 7.5],
+        "water_requirement": "very high"
+      },
+      "fertilizer": {
+        "basal": {
+          "DAP_kg_per_acre": 50,
+          "MOP_kg_per_acre": 50
+        },
+        "top_dressing": [
+          { "stage": "30 days", "urea_kg_per_acre": 40 },
+          { "stage": "60 days", "urea_kg_per_acre": 40 },
+          { "stage": "90 days", "urea_kg_per_acre": 30 }
+        ]
+      },
+      "irrigation": {
+        "total_irrigations": "10-15 depending on season",
+        "critical_stages": ["germination", "tillering", "grand growth period"]
+      },
+      "common_pests": ["P010"],
+      "common_diseases": ["D008"],
+      "harvesting": {
+        "indicator": "12-14 months after planting, Brix 18-20%",
+        "method": "Manual cutting at ground level"
+      },
+      "districts_suitable": ["Champaran", "Muzaffarpur", "Sitamarhi", "Darbhanga", "Samastipur"],
+      "sugar_mills_in_bihar": ["Harinagar Sugar Mill", "Motipur Sugar Mill", "Sugauli Sugar Mill"]
+    },
+    {
+      "id": "C007",
+      "name_en": "Potato",
+      "name_hi": "आलू",
+      "name_bho": "आलू",
+      "season": "rabi",
+      "category": "vegetable",
+      "popular_varieties": [
+        {
+          "variety": "Kufri Jyoti",
+          "duration_days": 90,
+          "yield_ton_per_acre": 10,
+          "features": "Early, good for chips"
+        },
+        {
+          "variety": "Kufri Bahar",
+          "duration_days": 100,
+          "yield_ton_per_acre": 12,
+          "features": "High yield, late blight tolerant"
+        },
+        {
+          "variety": "Kufri Sindhuri",
+          "duration_days": 120,
+          "yield_ton_per_acre": 14,
+          "features": "Red skin, excellent keeping quality"
+        }
+      ],
+      "sowing": {
+        "optimal_period": "October 15 – November 15",
+        "seed_rate_tons_per_acre": 1.0,
+        "row_spacing_cm": 60,
+        "plant_spacing_cm": 20,
+        "depth_cm": 8
+      },
+      "soil": {
+        "type": ["sandy loam", "loam"],
+        "ph_range": [5.5, 6.5],
+        "water_requirement": "medium",
+        "notes": "Well-drained, loose soil preferred"
+      },
+      "fertilizer": {
+        "basal": {
+          "DAP_kg_per_acre": 60,
+          "MOP_kg_per_acre": 60
+        },
+        "top_dressing": [
+          { "stage": "Earthing up (30 days)", "urea_kg_per_acre": 40 }
+        ]
+      },
+      "irrigation": {
+        "total_irrigations": 6,
+        "critical_stages": ["sprout emergence", "tuber initiation", "tuber bulking"]
+      },
+      "common_pests": ["P011"],
+      "common_diseases": ["D009"],
+      "harvesting": {
+        "indicator": "Vines dry, skin set (does not peel on rubbing)",
+        "method": "Manual digging or mechanical digger"
+      },
+      "districts_suitable": ["Nalanda", "Patna", "Vaishali", "Muzaffarpur", "Saran"],
+      "cold_storage_available": true
+    },
+    {
+      "id": "C008",
+      "name_en": "Litchi",
+      "name_hi": "लीची",
+      "name_bho": "लीची",
+      "season": "perennial",
+      "category": "horticulture",
+      "popular_varieties": [
+        {
+          "variety": "Shahi",
+          "duration_to_bearing_years": 5,
+          "yield_kg_per_tree": 60,
+          "features": "GI tagged, aromatic, thin skin"
+        },
+        {
+          "variety": "China",
+          "duration_to_bearing_years": 6,
+          "yield_kg_per_tree": 80,
+          "features": "Large fruit, sweet"
+        }
+      ],
+      "planting": {
+        "best_season": "July – August",
+        "spacing_m": "8x8 or 10x10",
+        "plants_per_acre": 50,
+        "propagation": "Air layering (gooty)"
+      },
+      "soil": {
+        "type": ["deep loam", "alluvial"],
+        "ph_range": [5.5, 7.0],
+        "water_requirement": "medium-high"
+      },
+      "fertilizer": {
+        "per_tree_per_year": {
+          "FYM_kg": 50,
+          "urea_g": 1000,
+          "SSP_g": 1500,
+          "MOP_g": 750
+        }
+      },
+      "harvesting": {
+        "season": "May – June",
+        "indicator": "Skin turns bright red",
+        "shelf_life_days": 3
+      },
+      "GI_tag": true,
+      "districts_suitable": ["Muzaffarpur", "Vaishali", "Sheohar", "Sitamarhi", "East Champaran"]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "state": "Bihar",
+    "last_updated": "2025-04-01",
+    "version": "1.0",
+    "sources": [
+      "Bihar Agriculture Department",
+      "Ministry of Agriculture & Farmers Welfare, GoI",
+      "PM Kisan official portal",
+      "PMFBY official portal"
+    ]
+  },
+  "schemes": [
+    {
+      "id": "S001",
+      "name_en": "PM Kisan Samman Nidhi (PM-KISAN)",
+      "name_hi": "पीएम किसान सम्मान निधि",
+      "scheme_type": "central",
+      "launched": "February 2019",
+      "department": "Ministry of Agriculture & Farmers Welfare, Government of India",
+      "description": "Direct income support of ₹6,000 per year to all landholding farmer families, paid in 3 installments of ₹2,000 each.",
+      "benefit": {
+        "amount_per_year_inr": 6000,
+        "installments": 3,
+        "per_installment_inr": 2000,
+        "mode": "Direct Bank Transfer (DBT)",
+        "transfer_schedule": ["April–July", "August–November", "December–March"]
+      },
+      "eligibility": {
+        "beneficiary": "All land-holding farmer families",
+        "exclusions": [
+          "Institutional landholders",
+          "Farmer families with one member as former/present Constitutional post holder",
+          "Farmer families with one member who is/was minister, MP, MLA",
+          "Central/State Government employees (excluding Group D / Class IV)",
+          "Income Tax payers",
+          "Retired with pension > ₹10,000/month"
+        ]
+      },
+      "documents_required": [
+        "Aadhaar card",
+        "Land records (Khata/Khatian in Bihar)",
+        "Bank account passbook (linked to Aadhaar)",
+        "Mobile number"
+      ],
+      "how_to_apply": {
+        "online": "https://pmkisan.gov.in → Farmer Corner → New Farmer Registration",
+        "offline": "Visit Block Agriculture Office or Common Service Centre (CSC)",
+        "via_whatsapp_bot": "Send 'PM KISAN STATUS' to our chatbot",
+        "helpline": "155261 / 011-24300606"
+      },
+      "status_check": "https://pmkisan.gov.in/BeneficiaryStatus.aspx",
+      "bihar_beneficiaries_approx": "7.5 million farmers",
+      "faqs": [
+        {
+          "q": "Mujhe PM Kisan ka paisa nahi aaya?",
+          "a": "Aadhaar-bank linking check karo. Agar block se verification pending hai to agricultural officer se milein."
+        },
+        {
+          "q": "Bihar mein registration kaise karein?",
+          "a": "CSC center ya block agriculture office mein jayen, ya pmkisan.gov.in par online registration karein."
+        }
+      ]
+    },
+    {
+      "id": "S002",
+      "name_en": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "name_hi": "प्रधानमंत्री फसल बीमा योजना",
+      "scheme_type": "central",
+      "launched": "January 2016",
+      "department": "Ministry of Agriculture & Farmers Welfare",
+      "description": "Crop insurance scheme providing financial support to farmers who suffer crop loss/damage due to unforeseen events like natural calamities, pests & diseases.",
+      "benefit": {
+        "coverage": "Crop loss due to natural calamities, pest, disease, post-harvest losses",
+        "premium": {
+          "kharif_crops_percent": 2.0,
+          "rabi_crops_percent": 1.5,
+          "horticulture_percent": 5.0
+        },
+        "claim_type": "Based on yield assessment by state government",
+        "max_sum_insured": "Based on crop and district notified scale of finance"
+      },
+      "eligibility": {
+        "beneficiary": "All farmers growing notified crops in notified areas",
+        "note": "Loanee farmers are compulsorily enrolled; non-loanee farmers can voluntarily enroll"
+      },
+      "notified_crops_bihar": ["Paddy", "Wheat", "Maize", "Lentil", "Mustard", "Potato", "Sugarcane"],
+      "documents_required": [
+        "Aadhaar card",
+        "Bank account details",
+        "Land record",
+        "Crop sowing certificate"
+      ],
+      "how_to_apply": {
+        "last_date_kharif": "July 31",
+        "last_date_rabi": "December 31",
+        "online": "https://pmfby.gov.in",
+        "offline": "Nearest bank branch / CSC center",
+        "helpline": "1800-200-7710"
+      },
+      "claim_process": {
+        "step1": "Inform bank/insurance company within 72 hours of crop damage",
+        "step2": "Submit crop loss intimation form",
+        "step3": "Joint survey by state government and insurance company",
+        "step4": "Claim settled in bank account"
+      }
+    },
+    {
+      "id": "S003",
+      "name_en": "Kisan Credit Card (KCC)",
+      "name_hi": "किसान क्रेडिट कार्ड",
+      "scheme_type": "central",
+      "launched": "1998 (revised 2012, 2020)",
+      "department": "Ministry of Agriculture / NABARD",
+      "description": "Provides short-term credit to farmers for crop cultivation, post-harvest expenses, produce marketing, personal needs, and maintenance of farm assets at subsidized interest.",
+      "benefit": {
+        "credit_limit": "Up to ₹3 lakh at 4% effective interest rate (with 3% interest subvention)",
+        "interest_rate_percent": 7.0,
+        "interest_subvention_percent": 3.0,
+        "effective_rate_if_timely_repayment": 4.0,
+        "repayment_period_months": 12,
+        "credit_for": [
+          "Purchase of seeds, fertilizers, pesticides",
+          "Land preparation",
+          "Post-harvest expenses",
+          "Allied activities (fishery, animal husbandry)"
+        ]
+      },
+      "eligibility": {
+        "beneficiary": "Farmers, tenant farmers, oral lessees, sharecroppers, SHG members",
+        "animal_husbandry": "Also extended to fishermen and dairy farmers"
+      },
+      "documents_required": [
+        "Aadhaar card",
+        "Land record / tenancy agreement",
+        "Passport size photo",
+        "Bank account"
+      ],
+      "how_to_apply": {
+        "online": "https://pmkisan.gov.in → KCC Form",
+        "offline": "Nearest bank (SBI, PNB, UCO, Bihar Gramin Bank etc.)",
+        "helpline": "1800-180-1551"
+      }
+    },
+    {
+      "id": "S004",
+      "name_en": "Bihar Rajya Fasal Sahayata Yojana",
+      "name_hi": "बिहार राज्य फसल सहायता योजना",
+      "scheme_type": "state",
+      "launched": "2018",
+      "department": "Bihar State Crop Assistance Scheme, Cooperative Department Bihar",
+      "description": "State-level crop compensation scheme (not insurance) for farmers whose crop yield falls below threshold due to natural calamities. Provides assistance without premium payment.",
+      "benefit": {
+        "20_percent_loss": "₹7,500 per hectare",
+        "above_20_percent_loss": "₹10,000 per hectare",
+        "mode": "DBT to farmer's bank account",
+        "max_area": 2,
+        "max_area_unit": "hectare per farmer"
+      },
+      "eligibility": {
+        "beneficiary": "Rabi and Kharif farmers with crop loss due to natural calamity",
+        "registration": "Must register before crop season on portal"
+      },
+      "notified_crops_kharif": ["Paddy", "Maize", "Soybean"],
+      "notified_crops_rabi": ["Wheat", "Rabi Maize", "Masur", "Arhar", "Chana", "Sarson", "Potato"],
+      "how_to_apply": {
+        "online": "https://dbtagriculture.bihar.gov.in → Fasal Sahayata",
+        "registration_period_kharif": "July 31",
+        "registration_period_rabi": "November 31",
+        "helpline": "1800-345-6188"
+      },
+      "documents_required": [
+        "Aadhaar (linked to mobile)",
+        "Bank passbook",
+        "Khatian (land record)",
+        "Self-declaration of sown crop"
+      ]
+    },
+    {
+      "id": "S005",
+      "name_en": "Sub-Mission on Agricultural Mechanization (SMAM) – Bihar",
+      "name_hi": "कृषि यंत्रीकरण उप मिशन",
+      "scheme_type": "central_plus_state",
+      "department": "Bihar Agriculture Department",
+      "description": "Subsidy on agricultural machinery and equipment for farmers to reduce cultivation cost and drudgery.",
+      "benefit": {
+        "subsidy_general_percent": 40,
+        "subsidy_sc_st_small_marginal_percent": 50,
+        "eligible_machines": [
+          "Tractor (up to 70 HP)",
+          "Rotavator",
+          "Paddy Transplanter",
+          "Combine Harvester",
+          "Sprayer (knapsack / power operated)",
+          "Zero Till Seed Drill",
+          "Happy Seeder",
+          "Reaper-cum-binder",
+          "Thresher"
+        ]
+      },
+      "how_to_apply": {
+        "online": "https://farmech.bih.nic.in / https://agrimachinery.nic.in",
+        "selection": "Lottery system through online registration",
+        "helpline": "0612-2547066"
+      },
+      "documents_required": [
+        "Aadhaar",
+        "Land record",
+        "Bank passbook",
+        "Caste certificate (if applicable)"
+      ]
+    },
+    {
+      "id": "S006",
+      "name_en": "Mukhyamantri Horticulture Mission Bihar",
+      "name_hi": "मुख्यमंत्री बागवानी मिशन",
+      "scheme_type": "state",
+      "department": "Horticulture Department, Government of Bihar",
+      "description": "Promotes area expansion and productivity improvement in fruits, vegetables, spices, flowers and mushroom cultivation.",
+      "benefit": {
+        "vegetable_cultivation_subsidy": "₹10,000 – ₹50,000 per hectare depending on crop",
+        "fruit_plant_subsidy": "50% of unit cost (grafted seedlings)",
+        "drip_sprinkler_irrigation": "50-90% subsidy",
+        "mushroom_unit": "₹50,000 per unit subsidy",
+        "covered_crops": ["Banana", "Mango", "Litchi", "Guava", "Tomato", "Chili", "Onion", "Potato", "Mushroom"]
+      },
+      "how_to_apply": {
+        "online": "https://horticulture.bihar.gov.in",
+        "offline": "District Horticulture Office",
+        "helpline": "0612-2547770"
+      }
+    },
+    {
+      "id": "S007",
+      "name_en": "Jal-Jeevan Hariyali – Agricultural Component",
+      "name_hi": "जल-जीवन हरियाली (कृषि घटक)",
+      "scheme_type": "state",
+      "launched": "2019",
+      "department": "Agriculture Department Bihar",
+      "description": "Promotes water conservation, micro-irrigation and climate adaptation in Bihar's agriculture.",
+      "benefit": {
+        "drip_irrigation_subsidy_percent": 90,
+        "sprinkler_irrigation_subsidy_percent": 75,
+        "water_harvesting_support": true,
+        "organic_farming_support": true,
+        "free_soil_testing": true,
+        "solar_pump_subsidy_percent": 90
+      },
+      "how_to_apply": {
+        "online": "https://dbtagriculture.bihar.gov.in",
+        "helpline": "1800-180-1551"
+      }
+    },
+    {
+      "id": "S008",
+      "name_en": "PM Kisan Maandhan Yojana (Pension)",
+      "name_hi": "पीएम किसान मानधन योजना",
+      "scheme_type": "central",
+      "launched": "September 2019",
+      "department": "Ministry of Agriculture & Farmers Welfare",
+      "description": "Pension scheme for small and marginal farmers. Provides ₹3,000/month pension after age 60.",
+      "benefit": {
+        "monthly_pension_after_60": 3000,
+        "contribution": "Equal contribution by farmer and Government",
+        "monthly_contribution_age_18": 55,
+        "monthly_contribution_age_40": 200
+      },
+      "eligibility": {
+        "age": "18–40 years",
+        "land_holding": "Up to 2 hectares (small and marginal farmers)",
+        "exclusions": ["PM-SYM beneficiaries", "SMBY beneficiaries", "Government employees with NPS/EPFO"]
+      },
+      "how_to_apply": {
+        "online": "https://pmkmy.gov.in",
+        "offline": "Common Service Centre (CSC) / Gram Panchayat",
+        "helpline": "1800-267-6888"
+      },
+      "documents_required": [
+        "Aadhaar",
+        "Bank passbook",
+        "Land record"
+      ]
+    },
+    {
+      "id": "S009",
+      "name_en": "Paramparagat Krishi Vikas Yojana (PKVY) – Organic Farming",
+      "name_hi": "परंपरागत कृषि विकास योजना",
+      "scheme_type": "central",
+      "department": "Ministry of Agriculture & Farmers Welfare",
+      "description": "Promotes organic farming through cluster approach. Provides ₹50,000 per hectare over 3 years for organic input, certification and marketing support.",
+      "benefit": {
+        "financial_support_per_hectare_3yrs": 50000,
+        "cluster_size_minimum_hectares": 20,
+        "organic_certification_support": true,
+        "market_linkage_support": true
+      },
+      "how_to_apply": {
+        "offline": "District Agriculture Office / KVK",
+        "note": "Must form/join Farmer Interest Group (FIG)"
+      }
+    },
+    {
+      "id": "S010",
+      "name_en": "Bihar Agriculture Investment Promotion Policy",
+      "name_hi": "बिहार कृषि निवेश प्रोत्साहन नीति",
+      "scheme_type": "state",
+      "launched": "2020",
+      "department": "Bihar Agriculture Department",
+      "description": "Incentivizes agri-entrepreneurship, FPO formation, food processing units, and cold storage in Bihar.",
+      "benefit": {
+        "FPO_formation_support": "₹15 lakh per FPO for 3 years",
+        "cold_storage_subsidy_percent": 40,
+        "food_processing_unit_subsidy_percent": 50,
+        "agri_infrastructure_fund": "Loans at 3% interest rate"
+      },
+      "how_to_apply": {
+        "online": "https://udyog.bihar.gov.in",
+        "offline": "ATMA / District Agriculture Office"
+      }
+    }
+  ],
+  "quick_helplines": {
+    "kisan_call_centre": "1800-180-1551",
+    "pm_kisan_helpline": "155261",
+    "pmfby_helpline": "1800-200-7710",
+    "bihar_agriculture_helpline": "1800-345-6188",
+    "soil_testing_helpline": "0612-2215895",
+    "weather_sms_alert": "ICAR-RCER, Patna – farmers can register for Agromet advisories"
+  },
+  "nearby_resources": {
+    "ATMA": "Agricultural Technology Management Agency – each district has one",
+    "KVK": "Krishi Vigyan Kendra – one per district in Bihar for training and demonstration",
+    "PACS": "Primary Agricultural Credit Society – at block level for credit",
+    "CSC": "Common Service Centre – for online scheme registration"
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "state": "Bihar",
+    "last_updated": "2025-04-01",
+    "version": "1.0",
+    "source": "ICAR / Bihar Agriculture Department"
+  },
+  "pests": [
+    {
+      "id": "P001",
+      "name_en": "Brown Plant Hopper (BPH)",
+      "name_hi": "भूरा माहू",
+      "name_bho": "भूरा माहू",
+      "affects_crops": ["C001"],
+      "type": "insect",
+      "damage_type": "sucking",
+      "identification": {
+        "appearance": "Small brown insect, 2-4mm, found at base of plant",
+        "symptoms": "Yellowing and drying of plants in circular patches (hopperburn), sticky honeydew on leaves",
+        "affected_part": "Stem base, leaves",
+        "season": "July – October",
+        "peak_period": "August – September"
+      },
+      "economic_threshold": "10 hoppers per hill",
+      "management": {
+        "cultural": [
+          "Avoid excess nitrogen",
+          "Maintain 2-3 cm water level during infestation",
+          "Use resistant varieties (MTU-7029)",
+          "Avoid narrow row spacing"
+        ],
+        "biological": [
+          "Encourage spiders (natural predators)",
+          "Release Trichogramma cards (1 lakh/acre)"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Imidacloprid 17.8 SL",
+            "dose": "125 ml per acre",
+            "method": "Spray at base of plants",
+            "waiting_period_days": 14
+          },
+          {
+            "pesticide": "Buprofezin 25 SC",
+            "dose": "400 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 10
+          },
+          {
+            "pesticide": "Thiamethoxam 25 WG",
+            "dose": "40 g per acre",
+            "method": "Spray at stem base",
+            "waiting_period_days": 14
+          }
+        ]
+      },
+      "alert_conditions": {
+        "weather_trigger": "High humidity >80%, continuous rain",
+        "monitoring_method": "Yellow sticky traps, sweep net"
+      }
+    },
+    {
+      "id": "P002",
+      "name_en": "Leaf Folder",
+      "name_hi": "पत्ती लपेटक",
+      "name_bho": "पत्ती लपेटक",
+      "affects_crops": ["C001"],
+      "type": "insect",
+      "damage_type": "chewing",
+      "identification": {
+        "appearance": "Green caterpillar 15-20mm, folds leaf longitudinally",
+        "symptoms": "Leaves folded into tubes, white streaks on leaves, drying",
+        "affected_part": "Leaves",
+        "season": "July – September",
+        "peak_period": "August"
+      },
+      "economic_threshold": "1 folded leaf per tiller at vegetative stage",
+      "management": {
+        "cultural": [
+          "Remove folded leaves manually",
+          "Clip leaf tips in nursery",
+          "Avoid excess nitrogen fertilizer"
+        ],
+        "biological": [
+          "Trichogramma japonicum release (1.5 lakh/acre)",
+          "Bacillus thuringiensis (Bt) spray"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Chlorpyrifos 20 EC",
+            "dose": "500 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 15
+          },
+          {
+            "pesticide": "Lambda-cyhalothrin 5 EC",
+            "dose": "200 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "P003",
+      "name_en": "Stem Borer",
+      "name_hi": "तना छेदक",
+      "name_bho": "तना छेदक",
+      "affects_crops": ["C001"],
+      "type": "insect",
+      "damage_type": "boring",
+      "identification": {
+        "appearance": "White/yellowish caterpillar inside stem",
+        "symptoms": "Dead heart at vegetative stage, White ear at reproductive stage",
+        "affected_part": "Stem",
+        "season": "June – October"
+      },
+      "economic_threshold": "5% dead hearts or 2% white ears",
+      "management": {
+        "cultural": [
+          "Destroy stubbles after harvest",
+          "Uproot and burn affected hills",
+          "Light traps for moth monitoring"
+        ],
+        "biological": [
+          "Trichogramma japonicum (1 lakh eggs/acre weekly for 8 weeks)",
+          "Cotesia flavipes release"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Fipronil 0.3G",
+            "dose": "8 kg per acre",
+            "method": "Granule application in field water",
+            "waiting_period_days": 20
+          },
+          {
+            "pesticide": "Cartap hydrochloride 50 SP",
+            "dose": "400 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "P004",
+      "name_en": "Aphid",
+      "name_hi": "माहू",
+      "name_bho": "माहू",
+      "affects_crops": ["C002"],
+      "type": "insect",
+      "damage_type": "sucking",
+      "identification": {
+        "appearance": "Tiny green/black soft-bodied insects in clusters",
+        "symptoms": "Yellowing, curling of leaves, honeydew secretion, sooty mold",
+        "affected_part": "Leaves, shoots",
+        "season": "November – February",
+        "peak_period": "December – January (cold & foggy conditions)"
+      },
+      "economic_threshold": "10 aphids per shoot",
+      "management": {
+        "cultural": [
+          "Timely sowing (avoid late sowing)",
+          "Balanced fertilizer use"
+        ],
+        "biological": [
+          "Encourage ladybird beetles",
+          "Neem-based sprays"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Dimethoate 30 EC",
+            "dose": "300 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 14
+          },
+          {
+            "pesticide": "Imidacloprid 17.8 SL",
+            "dose": "75 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "P005",
+      "name_en": "Termite",
+      "name_hi": "दीमक",
+      "name_bho": "दीमक",
+      "affects_crops": ["C002", "C003"],
+      "type": "insect",
+      "damage_type": "chewing",
+      "identification": {
+        "appearance": "Pale white/yellow social insects in soil",
+        "symptoms": "Plants wilt and die, hollowed roots/stems, soil tunnels",
+        "affected_part": "Roots, stem base",
+        "season": "Year round, peak in dry conditions"
+      },
+      "management": {
+        "cultural": [
+          "Deep summer ploughing to expose colonies",
+          "Avoid undecomposed FYM",
+          "Remove crop residues"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Chlorpyrifos 20 EC",
+            "dose": "2L per acre in 400L water",
+            "method": "Soil drench at planting",
+            "waiting_period_days": 21
+          },
+          {
+            "pesticide": "Imidacloprid 70 WS (seed treatment)",
+            "dose": "5 ml per kg seed",
+            "method": "Seed treatment before sowing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P006",
+      "name_en": "Fall Armyworm (FAW)",
+      "name_hi": "फॉल आर्मीवर्म",
+      "name_bho": "फॉल आर्मीवर्म",
+      "affects_crops": ["C003"],
+      "type": "insect",
+      "damage_type": "chewing",
+      "identification": {
+        "appearance": "Caterpillar with inverted Y mark on head capsule, 35-40mm",
+        "symptoms": "Ragged holes in leaves, frass (excreta) in whorl, defoliation",
+        "affected_part": "Leaves, whorl",
+        "season": "June – September",
+        "peak_period": "July – August"
+      },
+      "economic_threshold": "5-10% plants with leaf damage in whorl stage",
+      "management": {
+        "cultural": [
+          "Intercropping with cowpea",
+          "Bird perches in field",
+          "Sand or ash application in whorl"
+        ],
+        "biological": [
+          "Bacillus thuringiensis var. kurstaki (Bt) spray",
+          "Spodoptera litura NPV spray",
+          "Trichogramma release"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Emamectin benzoate 5 SG",
+            "dose": "80 g per acre",
+            "method": "Directed whorl spray",
+            "waiting_period_days": 7
+          },
+          {
+            "pesticide": "Chlorantraniliprole 18.5 SC",
+            "dose": "60 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      },
+      "alert_conditions": {
+        "weather_trigger": "High temperature + low rainfall",
+        "monitoring_method": "Pheromone traps (FAW lure), 1 trap per 2 acres"
+      }
+    },
+    {
+      "id": "P007",
+      "name_en": "Maize Borer",
+      "name_hi": "मक्का तना छेदक",
+      "name_bho": "मक्का तना छेदक",
+      "affects_crops": ["C003"],
+      "type": "insect",
+      "damage_type": "boring",
+      "identification": {
+        "appearance": "Pinkish caterpillar inside stalk",
+        "symptoms": "Dead heart, bore holes with frass on stem",
+        "affected_part": "Stem",
+        "season": "July – September"
+      },
+      "management": {
+        "chemical": [
+          {
+            "pesticide": "Carbofuran 3G",
+            "dose": "10 kg per acre",
+            "method": "Granule in whorl",
+            "waiting_period_days": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "P008",
+      "name_en": "Pod Borer",
+      "name_hi": "फली छेदक",
+      "name_bho": "फली छेदक",
+      "affects_crops": ["C004"],
+      "type": "insect",
+      "damage_type": "chewing",
+      "identification": {
+        "appearance": "Green/brown caterpillar, 35mm",
+        "symptoms": "Circular holes in pods, frass inside, seeds eaten",
+        "affected_part": "Pods, seeds",
+        "season": "November – February"
+      },
+      "management": {
+        "chemical": [
+          {
+            "pesticide": "Indoxacarb 14.5 SC",
+            "dose": "200 ml per acre",
+            "method": "Foliar spray at pod formation",
+            "waiting_period_days": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "P009",
+      "name_en": "Mustard Aphid",
+      "name_hi": "सरसों माहू",
+      "name_bho": "सरसों माहू",
+      "affects_crops": ["C005"],
+      "type": "insect",
+      "damage_type": "sucking",
+      "identification": {
+        "appearance": "Yellow-green aphids in dense colonies on shoots and pods",
+        "symptoms": "Wilting, yellowing, stunted growth, honeydew and sooty mold",
+        "affected_part": "Terminal shoots, flower buds, pods",
+        "season": "December – February"
+      },
+      "economic_threshold": "20-25 aphids per plant",
+      "management": {
+        "cultural": [
+          "Early sowing (October 1-10)",
+          "Spray plain water to dislodge aphids"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Oxydemeton methyl 25 EC",
+            "dose": "250 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "P010",
+      "name_en": "Top Shoot Borer",
+      "name_hi": "शीर्ष प्ररोह छेदक",
+      "name_bho": "अगरी छेदक",
+      "affects_crops": ["C006"],
+      "type": "insect",
+      "damage_type": "boring",
+      "identification": {
+        "appearance": "Pale yellowish caterpillar inside top shoot",
+        "symptoms": "Dead heart in young plants, characteristic boreholes in stem",
+        "affected_part": "Top shoot, stem",
+        "season": "May – August (after planting)"
+      },
+      "management": {
+        "chemical": [
+          {
+            "pesticide": "Chlorpyrifos 20 EC",
+            "dose": "400 ml per acre in 200L water",
+            "method": "Spray in whorl",
+            "waiting_period_days": 21
+          }
+        ]
+      }
+    },
+    {
+      "id": "P011",
+      "name_en": "Potato Tuber Moth",
+      "name_hi": "आलू कंद शलभ",
+      "name_bho": "आलू कंद शलभ",
+      "affects_crops": ["C007"],
+      "type": "insect",
+      "damage_type": "boring",
+      "identification": {
+        "appearance": "Small brownish moth; larvae bore into tubers",
+        "symptoms": "Tunnels in tubers, frass at entry points, rotting in storage",
+        "affected_part": "Tubers",
+        "season": "October – February"
+      },
+      "management": {
+        "cultural": [
+          "Adequate earthing up to cover tubers",
+          "Timely harvesting",
+          "Proper storage with neem leaves"
+        ],
+        "chemical": [
+          {
+            "pesticide": "Chlorpyrifos 20 EC",
+            "dose": "300 ml per acre",
+            "method": "Soil spray before earthing up"
+          }
+        ]
+      }
+    }
+  ],
+  "image_diagnostic_guide": {
+    "instructions": "Upload a clear image of affected plant part. Ensure good lighting, capture the damaged area clearly.",
+    "confidence_threshold": 0.75,
+    "model": "pest_detection_cnn_v2",
+    "supported_formats": ["jpg", "jpeg", "png", "webp"]
+  }
+}

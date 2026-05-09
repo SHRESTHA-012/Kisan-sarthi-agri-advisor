@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "authority": "Commission for Agricultural Costs & Prices (CACP), Government of India",
+    "approved_by": "Cabinet Committee on Economic Affairs (CCEA)",
+    "last_updated": "2025-04-01",
+    "currency": "INR",
+    "unit": "per quintal (100 kg)",
+    "note": "MSP (Minimum Support Price) is the government-guaranteed price for key crops. Farmers are entitled to receive at least this price."
+  },
+  "procurement_agencies": {
+    "Bihar": {
+      "paddy": "Bihar State Food & Civil Supplies Corporation (BSFCSC)",
+      "wheat": "Food Corporation of India (FCI) / BSFCSC",
+      "maize": "NAFED / State Co-operative",
+      "pulses": "NAFED / NCCF",
+      "oilseeds": "NAFED / NCCF",
+      "contact": "Toll Free: 1800-345-6188"
+    }
+  },
+  "msp_history": {
+    "kharif": {
+      "crop_category": "Kharif (Sown June–July, Harvested Oct–Nov)",
+      "crops": [
+        {
+          "crop_id": "C001",
+          "crop_name_en": "Paddy (Common)",
+          "crop_name_hi": "धान (सामान्य)",
+          "msp": {
+            "2022_23": 2015,
+            "2023_24": 2183,
+            "2024_25": 2300,
+            "2025_26": 2369
+          },
+          "grade_a_premium_per_qtl": 20,
+          "procurement_open_in_bihar": true,
+          "procurement_period": "November 1 – January 31",
+          "registration_portal": "https://dbtagriculture.bihar.gov.in",
+          "documents_required": ["Aadhaar", "Land Record (Jamabandi)", "Bank Passbook", "Mobile Number"]
+        },
+        {
+          "crop_id": "C003",
+          "crop_name_en": "Maize",
+          "crop_name_hi": "मक्का",
+          "msp": {
+            "2022_23": 1962,
+            "2023_24": 2090,
+            "2024_25": 2225,
+            "2025_26": 2293
+          },
+          "procurement_open_in_bihar": true,
+          "procurement_period": "October 1 – December 31",
+          "registration_portal": "https://dbtagriculture.bihar.gov.in"
+        },
+        {
+          "crop_id": "arhar",
+          "crop_name_en": "Arhar (Pigeon Pea)",
+          "crop_name_hi": "अरहर",
+          "msp": {
+            "2022_23": 6600,
+            "2023_24": 7000,
+            "2024_25": 7550,
+            "2025_26": 8000
+          },
+          "procurement_open_in_bihar": false,
+          "note": "Procurement through NAFED, limited availability in Bihar"
+        },
+        {
+          "crop_id": "moong",
+          "crop_name_en": "Moong (Green Gram)",
+          "crop_name_hi": "मूंग",
+          "msp": {
+            "2022_23": 7755,
+            "2023_24": 8558,
+            "2024_25": 8682,
+            "2025_26": 8962
+          },
+          "procurement_open_in_bihar": false
+        },
+        {
+          "crop_id": "urad",
+          "crop_name_en": "Urad (Black Gram)",
+          "crop_name_hi": "उड़द",
+          "msp": {
+            "2022_23": 6600,
+            "2023_24": 6950,
+            "2024_25": 7400,
+            "2025_26": 7800
+          },
+          "procurement_open_in_bihar": false
+        },
+        {
+          "crop_id": "groundnut",
+          "crop_name_en": "Groundnut (Shell)",
+          "crop_name_hi": "मूंगफली",
+          "msp": {
+            "2022_23": 5850,
+            "2023_24": 6377,
+            "2024_25": 6783,
+            "2025_26": 7046
+          }
+        },
+        {
+          "crop_id": "cotton_medium",
+          "crop_name_en": "Cotton (Medium Staple)",
+          "crop_name_hi": "कपास (मध्यम रेशा)",
+          "msp": {
+            "2022_23": 6080,
+            "2023_24": 6620,
+            "2024_25": 7020,
+            "2025_26": 7121
+          }
+        }
+      ]
+    },
+    "rabi": {
+      "crop_category": "Rabi (Sown Nov–Dec, Harvested March–April)",
+      "crops": [
+        {
+          "crop_id": "C002",
+          "crop_name_en": "Wheat",
+          "crop_name_hi": "गेहूं",
+          "msp": {
+            "2022_23": 2015,
+            "2023_24": 2125,
+            "2024_25": 2275,
+            "2025_26": 2425
+          },
+          "procurement_open_in_bihar": true,
+          "procurement_period": "April 1 – June 30",
+          "key_centres_bihar": ["Patna", "Muzaffarpur", "Darbhanga", "Bhagalpur", "Gaya"],
+          "registration_portal": "https://dbtagriculture.bihar.gov.in"
+        },
+        {
+          "crop_id": "C004",
+          "crop_name_en": "Lentil (Masur)",
+          "crop_name_hi": "मसूर",
+          "msp": {
+            "2022_23": 5500,
+            "2023_24": 6000,
+            "2024_25": 6425,
+            "2025_26": 6700
+          },
+          "procurement_open_in_bihar": true,
+          "note": "NAFED-operated procurement"
+        },
+        {
+          "crop_id": "C005",
+          "crop_name_en": "Mustard (Rapeseed)",
+          "crop_name_hi": "सरसों",
+          "msp": {
+            "2022_23": 5050,
+            "2023_24": 5450,
+            "2024_25": 5650,
+            "2025_26": 5950
+          },
+          "procurement_open_in_bihar": true,
+          "note": "NAFED-operated procurement in Bihar"
+        },
+        {
+          "crop_id": "gram",
+          "crop_name_en": "Gram (Chickpea)",
+          "crop_name_hi": "चना",
+          "msp": {
+            "2022_23": 5230,
+            "2023_24": 5440,
+            "2024_25": 5725,
+            "2025_26": 6023
+          }
+        },
+        {
+          "crop_id": "barley",
+          "crop_name_en": "Barley",
+          "crop_name_hi": "जौ",
+          "msp": {
+            "2022_23": 1635,
+            "2023_24": 1735,
+            "2024_25": 1850,
+            "2025_26": 2000
+          }
+        },
+        {
+          "crop_id": "sunflower",
+          "crop_name_en": "Sunflower Seed",
+          "crop_name_hi": "सूरजमुखी",
+          "msp": {
+            "2022_23": 6400,
+            "2023_24": 6760,
+            "2024_25": 7280,
+            "2025_26": 7280
+          }
+        }
+      ]
+    }
+  },
+  "market_prices": {
+    "note": "Live mandi prices fetched from Agmarknet. Below are approximate ranges.",
+    "source": "https://agmarknet.gov.in",
+    "as_of_date": "2025-04-01",
+    "major_mandis_bihar": [
+      {
+        "mandi": "Patna Sadar",
+        "district": "Patna",
+        "commodities": [
+          { "crop": "Wheat", "min_price": 2300, "max_price": 2450, "modal_price": 2380 },
+          { "crop": "Paddy (Common)", "min_price": 2250, "max_price": 2400, "modal_price": 2310 },
+          { "crop": "Potato", "min_price": 800, "max_price": 1200, "modal_price": 1000 },
+          { "crop": "Mustard", "min_price": 5600, "max_price": 5900, "modal_price": 5750 }
+        ]
+      },
+      {
+        "mandi": "Muzaffarpur",
+        "district": "Muzaffarpur",
+        "commodities": [
+          { "crop": "Litchi", "min_price": 3000, "max_price": 6000, "modal_price": 4500, "unit": "per quintal (seasonal)" },
+          { "crop": "Maize", "min_price": 1900, "max_price": 2100, "modal_price": 2000 },
+          { "crop": "Paddy (Common)", "min_price": 2200, "max_price": 2350, "modal_price": 2280 }
+        ]
+      },
+      {
+        "mandi": "Purnia",
+        "district": "Purnia",
+        "commodities": [
+          { "crop": "Maize", "min_price": 1950, "max_price": 2150, "modal_price": 2050 },
+          { "crop": "Paddy", "min_price": 2200, "max_price": 2380, "modal_price": 2290 },
+          { "crop": "Jute", "min_price": 4500, "max_price": 5000, "modal_price": 4750 }
+        ]
+      }
+    ]
+  },
+  "dbt_agriculture_scheme": {
+    "name": "DBT Agriculture Bihar",
+    "portal": "https://dbtagriculture.bihar.gov.in",
+    "helpline": "0612-2547066",
+    "services": [
+      "MSP procurement registration",
+      "Input subsidy",
+      "Kisan Credit Card application",
+      "Crop insurance (PMFBY)"
+    ]
+  }
+}
