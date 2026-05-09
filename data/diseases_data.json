@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "state": "Bihar",
+    "last_updated": "2025-04-01",
+    "version": "1.0",
+    "source": "ICAR / Bihar Agriculture Department / Plant Protection Division"
+  },
+  "diseases": [
+    {
+      "id": "D001",
+      "name_en": "Rice Blast",
+      "name_hi": "धान का झुलसा रोग",
+      "type": "fungal",
+      "pathogen": "Magnaporthe oryzae",
+      "affects_crops": ["C001"],
+      "identification": {
+        "symptoms": "Diamond-shaped grey lesions with brown border on leaves; neck rot at panicle base causing white ears",
+        "affected_parts": ["leaves", "neck", "panicle"],
+        "color": "Grey center, brown border, yellow halo",
+        "season": "July – September",
+        "favourable_conditions": "High humidity >90%, temperature 24-28°C, excess nitrogen"
+      },
+      "economic_importance": "Can cause 50-80% yield loss in severe cases",
+      "management": {
+        "cultural": [
+          "Use resistant varieties (Rajendra Sweta, IR-64)",
+          "Avoid excess nitrogen fertilizer",
+          "Drain field periodically",
+          "Destroy infected crop debris"
+        ],
+        "biological": [
+          "Trichoderma viride seed treatment (4g/kg seed)",
+          "Pseudomonas fluorescens spray (2.5 kg/acre)"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Tricyclazole 75 WP",
+            "dose": "120 g per acre",
+            "method": "Foliar spray",
+            "timing": "At first symptom appearance",
+            "waiting_period_days": 7
+          },
+          {
+            "fungicide": "Isoprothiolane 40 EC",
+            "dose": "300 ml per acre",
+            "method": "Foliar spray",
+            "timing": "Preventive at boot leaf stage",
+            "waiting_period_days": 14
+          },
+          {
+            "fungicide": "Carbendazim 50 WP",
+            "dose": "200 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "D002",
+      "name_en": "Bacterial Leaf Blight (BLB)",
+      "name_hi": "जीवाणु पत्ती झुलसा",
+      "type": "bacterial",
+      "pathogen": "Xanthomonas oryzae pv. oryzae",
+      "affects_crops": ["C001"],
+      "identification": {
+        "symptoms": "Water-soaked to yellowish stripe on leaf margin that turns straw-yellow; milky or opaque bacterial ooze from cut ends",
+        "affected_parts": ["leaves", "leaf margins"],
+        "color": "Yellow to straw color from margins",
+        "season": "August – October",
+        "favourable_conditions": "Flood, storm damage, high nitrogen, high humidity"
+      },
+      "management": {
+        "cultural": [
+          "Use certified disease-free seeds",
+          "Avoid flood irrigation after disease onset",
+          "Remove weed hosts",
+          "Balanced potassium fertilization"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Copper oxychloride 50 WP",
+            "dose": "500 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          },
+          {
+            "fungicide": "Streptomycin sulphate + Tetracycline (Plantomycin)",
+            "dose": "100 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "D003",
+      "name_en": "Wheat Rust (Yellow/Brown)",
+      "name_hi": "गेहूं का रतुआ",
+      "type": "fungal",
+      "pathogen": "Puccinia striiformis (Yellow) / Puccinia recondita (Brown)",
+      "affects_crops": ["C002"],
+      "identification": {
+        "symptoms": "Yellow/orange powdery pustules arranged in stripes on leaves (yellow rust); scattered brown pustules (brown rust)",
+        "affected_parts": ["leaves", "stem", "glumes"],
+        "color": "Yellow-orange or brick-red powdery masses",
+        "season": "January – March",
+        "favourable_conditions": "Cool temperature 10-15°C, high humidity, dew"
+      },
+      "economic_importance": "Can cause 20-70% yield loss",
+      "management": {
+        "cultural": [
+          "Grow resistant varieties (HD-2967, K-307)",
+          "Timely sowing",
+          "Avoid dense planting"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Propiconazole 25 EC",
+            "dose": "200 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 21
+          },
+          {
+            "fungicide": "Mancozeb 75 WP",
+            "dose": "600 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "D004",
+      "name_en": "Wheat Loose Smut",
+      "name_hi": "गेहूं का खुला कंड",
+      "type": "fungal",
+      "pathogen": "Ustilago segetum tritici",
+      "affects_crops": ["C002"],
+      "identification": {
+        "symptoms": "Entire ear replaced by black powdery mass of spores, enclosed in thin membrane that ruptures at heading",
+        "affected_parts": ["ear", "grains"],
+        "color": "Black sooty mass",
+        "season": "February – March (at heading)"
+      },
+      "management": {
+        "cultural": [
+          "Use certified seeds",
+          "Hot water seed treatment (52°C for 10 min)"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Carboxin 75 WP (Vitavax)",
+            "dose": "2.5 g per kg seed",
+            "method": "Seed treatment",
+            "waiting_period_days": 0
+          },
+          {
+            "fungicide": "Tebuconazole 2 DS",
+            "dose": "1 g per kg seed",
+            "method": "Seed treatment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D005",
+      "name_en": "Maize Turcicum Leaf Blight",
+      "name_hi": "मक्का का पत्ती झुलसा",
+      "type": "fungal",
+      "pathogen": "Exserohilum turcicum",
+      "affects_crops": ["C003"],
+      "identification": {
+        "symptoms": "Long, elliptical, greyish-green to tan lesions on leaves starting from lower leaves",
+        "affected_parts": ["leaves"],
+        "color": "Tan/grey-green cigar-shaped spots",
+        "season": "July – September",
+        "favourable_conditions": "Moderate temperature 18-27°C, high humidity, heavy dew"
+      },
+      "management": {
+        "cultural": [
+          "Grow resistant hybrids",
+          "Crop rotation",
+          "Destroy infected debris"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Mancozeb 75 WP",
+            "dose": "600 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          },
+          {
+            "fungicide": "Propiconazole 25 EC",
+            "dose": "200 ml per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 21
+          }
+        ]
+      }
+    },
+    {
+      "id": "D006",
+      "name_en": "Lentil Wilt",
+      "name_hi": "मसूर का उकठा रोग",
+      "type": "fungal",
+      "pathogen": "Fusarium oxysporum f. sp. lentis",
+      "affects_crops": ["C004"],
+      "identification": {
+        "symptoms": "Sudden wilting and yellowing of plants, brown discoloration of vascular tissue inside stem",
+        "affected_parts": ["roots", "stem", "whole plant"],
+        "color": "Brown vascular discoloration",
+        "season": "December – February"
+      },
+      "management": {
+        "cultural": [
+          "Use resistant varieties (PL-8)",
+          "Crop rotation with cereals",
+          "Seed treatment before sowing"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Carbendazim 50 WP",
+            "dose": "2 g per kg seed",
+            "method": "Seed treatment"
+          },
+          {
+            "fungicide": "Trichoderma viride",
+            "dose": "4 g per kg seed",
+            "method": "Seed biopriming"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D007",
+      "name_en": "Mustard White Rust",
+      "name_hi": "सरसों का सफेद रतुआ",
+      "type": "fungal",
+      "pathogen": "Albugo candida",
+      "affects_crops": ["C005"],
+      "identification": {
+        "symptoms": "White blister-like pustules on lower leaf surface; distorted stems and flower parts (staghead)",
+        "affected_parts": ["leaves (lower surface)", "stems", "flowers"],
+        "color": "White chalky pustules",
+        "season": "December – February",
+        "favourable_conditions": "Cool temperature 10-18°C, high humidity"
+      },
+      "management": {
+        "cultural": [
+          "Use resistant varieties (Pusa Tarak, Pusa Mahak)",
+          "Early sowing (before October 15)",
+          "Avoid overhead irrigation"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Metalaxyl + Mancozeb (Ridomil Gold)",
+            "dose": "400 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 14
+          },
+          {
+            "fungicide": "Mancozeb 75 WP",
+            "dose": "600 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "D008",
+      "name_en": "Sugarcane Red Rot",
+      "name_hi": "गन्ने का लाल सड़न रोग",
+      "type": "fungal",
+      "pathogen": "Colletotrichum falcatum",
+      "affects_crops": ["C006"],
+      "identification": {
+        "symptoms": "Wilting of top leaves, red discoloration inside stalk with white patches, sour smell from stalk",
+        "affected_parts": ["stalk internodes"],
+        "color": "Red with white patches inside stalk",
+        "season": "July – September",
+        "favourable_conditions": "Waterlogging, high temperature, stem borer wounds"
+      },
+      "economic_importance": "Most destructive sugarcane disease in Bihar",
+      "management": {
+        "cultural": [
+          "Use resistant varieties (CoSe-01434)",
+          "Treat setts with fungicide before planting",
+          "Remove and destroy infected clumps",
+          "Avoid waterlogging"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Carbendazim 50 WP",
+            "dose": "Sett treatment: 1g/L water, soak for 15 min",
+            "method": "Sett dip treatment before planting"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D009",
+      "name_en": "Potato Late Blight",
+      "name_hi": "आलू का पछेती अंगमारी",
+      "type": "fungal",
+      "pathogen": "Phytophthora infestans",
+      "affects_crops": ["C007"],
+      "identification": {
+        "symptoms": "Water-soaked dark brown lesions on leaves with white cottony growth on underside; brown rot in tubers",
+        "affected_parts": ["leaves", "stems", "tubers"],
+        "color": "Dark brown lesions, white sporulation below",
+        "season": "December – January",
+        "favourable_conditions": "Temperature 10-20°C, high humidity >90%, fog, dew"
+      },
+      "economic_importance": "Can destroy entire crop within 2 weeks under favourable conditions",
+      "management": {
+        "cultural": [
+          "Use certified disease-free seed tubers",
+          "Earthing up to protect tubers",
+          "Destroy infected haulm before harvest",
+          "Avoid overhead irrigation"
+        ],
+        "chemical": [
+          {
+            "fungicide": "Metalaxyl + Mancozeb (Ridomil MZ)",
+            "dose": "600 g per acre",
+            "method": "Foliar spray, repeat every 7-10 days",
+            "waiting_period_days": 14
+          },
+          {
+            "fungicide": "Cymoxanil + Mancozeb (Curzate M8)",
+            "dose": "600 g per acre",
+            "method": "Foliar spray",
+            "waiting_period_days": 7
+          },
+          {
+            "fungicide": "Chlorothalonil 75 WP",
+            "dose": "400 g per acre",
+            "method": "Preventive foliar spray",
+            "waiting_period_days": 7
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,39 +1,92 @@
-Crop: Wheat
+# Topic: Wheat (Gehun) — Complete Advisory for Bihar Farmers
+# Language: Hinglish
+# Region: Bihar, India
 
-Season:
-- Rabi crop
-- Sowing time: October to December
-- Harvest time: March to April
+---
 
-Climate:
-- Ideal temperature: 10°C to 25°C
-- Requires cool growing season and warm harvesting
+## Gehun ki Kheti — Bihar ke liye Puri Jankari
 
-Soil:
-- Well-drained loamy soil is best
-- Avoid waterlogged fields
+Gehun Bihar ki sabse important Rabi fasal hai. November-December mein boya jata hai aur March-April mein katai hoti hai. Patna, Gaya, Rohtas, Bhojpur, Buxar, Saran aur Muzaffarpur jile mein sabse zyada gehun ugaya jata hai.
 
-Seed:
-- Use certified seeds
-- Common varieties: HD-2967, PBW-343
+---
 
-Fertilizer:
-- Nitrogen (N), Phosphorus (P), Potassium (K)
-- Apply urea in split doses
+## Behtareen Kisme (Best Varieties for Bihar)
 
-Irrigation:
-- First irrigation after 20-25 days
-- Total 4-5 irrigations required
+HD-2967: Bihar ke liye sabse recommended variety. 120 din mein taiyar, 20 quintal per acre yield. Rust rog se ladne ki kshamta achhi hai.
 
-Common Pests:
-- Aphids
-- Termites
+PBW-550: Jaldi pakne wali variety (115 din). Jo kisan der se bote hain unke liye behtar hai.
 
-Diseases:
-- Rust
-- Smut
+HI-8498 (Malav Shakti): 22 quintal per acre yield deti hai. Protein zyada hota hai aur sukhe mein bhi theek dhang se ug jati hai.
 
-Advice:
-- Avoid over-irrigation
-- Use proper spacing between plants
-- Monitor pest attacks regularly
+Der se bowane ke liye (December ke baad): K-307 aur NW-1014 kisme use karein. Ye temperature badne par bhi kharab nahi hoti.
+
+---
+
+## Bowane ka Sahi Samay aur Tarika
+
+Sahi samay: 15 November se 15 December tak. Jaldi bowane se rust aur aphid ka khatra badh jata hai. Der se bowane se terminal heat stress hoti hai.
+
+Beej ki matra: 40 kg per acre. Line ki doori 22.5 cm rakho. Gehun ki geharai 5 cm se zyada mat karo.
+
+Bowane se pehle beej ko fungicide se upcharit karein: Carboxin 75WP (Vitavax) 2.5g per kg beej — isse Loose Smut rog nahi lagta.
+
+---
+
+## Khad Prabandhan
+
+Bowane ke samay: 50 kg DAP + 20 kg MOP per acre zameen mein milaein.
+
+Pehle paani ke baad (20-25 din mein): 30 kg Urea per acre dein.
+
+Doosre paani ke baad (40-45 din mein): 20 kg Urea per acre dein.
+
+Bihar ki mitti mein Zinc ki kami aam hai. Bowane se pehle 5 kg Zinc Sulphate per acre zaroor milaein. Isse dono dhaan aur gehun mein faida hota hai.
+
+---
+
+## Sinchai Prabandhan
+
+Gehun mein 6 paani dene chahiye:
+
+1. Crown Root Initiation (20-25 din baad) — yeh sabse zaroori paani hai
+2. Tillering (40-45 din baad)
+3. Jointing (60-65 din baad)
+4. Flowering (80-85 din baad)
+5. Grain Filling (100-105 din baad)
+6. Dough Stage (115-120 din baad)
+
+Agar paani ki kami ho to pehle 3 paani zaroor dein. Terminal drought se zyada nuksan hota hai.
+
+---
+
+## Kharpatwar Prabandhan (Weed Management)
+
+Gehun mein Bathua (Chenopodium), Jangli Jai (Wild Oat) aur Hirankuri common kharpatwar hain.
+
+Bowane ke 25-30 din baad Isoproturon 75WP (400g/acre) ya Clodinafop 15WP (160g/acre) spray karein. Spray ke samay mitti mein naami honi chahiye.
+
+---
+
+## Pramukh Rog aur Keede
+
+Rataun (Rust): Bihar mein Yellow Rust aur Brown Rust dono paaye jate hain. January-March mein thandi aur barish ke baad aata hai. Patte par peele ya laal powdery dhabbey dikhtey hain. Propiconazole 25EC (200ml/acre) spray karein. Resist varieties use karo to yeh problem hi nahi aayegi.
+
+Khula Kanda (Loose Smut): Pure baal ki jagah kala powdery daag dikhta hai. Yeh beej ke andar chhupta hai. Iska ilaaj sirf beej upchar hai — bowane se pehle Vitavax se upcharit beej hi lagao.
+
+Mahu (Aphid): Chote hare-kaale keede patte aur shooths par dikhte hain. December-January mein fog ke baad zyada hote hain. 10 aphid per shoot milne par Imidacloprid 17.8SL (75ml/acre) spray karein.
+
+---
+
+## Katai
+
+April mein jab dane sakht ho jaayein aur naami 20% se kam ho tab combine se katai karein. Katai mein der mat karein nahi to dane jhad jaate hain aur chamak bhi kam hoti hai.
+
+Katai ke baad dane ko khule mein sukhaein. Bhandaran ke liye 12% se kam naami zaroori hai.
+
+---
+
+## MSP aur Bikri
+
+Gehun ka MSP 2024-25 mein Rs. 2275 per quintal hai. Bihar mein FCI aur BSFCSC April 1 se June 30 tak kharidi karte hain. Apna registration dbtagriculture.bihar.gov.in par karein.
+
+---

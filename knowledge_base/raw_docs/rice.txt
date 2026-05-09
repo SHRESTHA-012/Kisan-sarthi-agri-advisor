@@ -1,39 +1,104 @@
-Crop: Rice
+# Topic: Rice (Paddy / Dhaan) — Complete Advisory for Bihar Farmers
+# Language: Hinglish (Hindi + English)
+# Region: Bihar, India
+# Format: Each section separated by --- for RAG chunking
 
-Season:
-- Kharif crop
-- Sowing time: June to July
-- Harvest time: October to November
+---
 
-Climate:
-- Temperature: 20°C to 35°C
-- Requires high humidity and rainfall
+## Dhaan ki Kheti — Bihar ke liye Puri Jankari
 
-Water:
-- Needs standing water in field
-- Maintain water level during growth
+Bihar mein dhaan sabse zyada ugaya jaane wala fasal hai. Kharif season (June-November) mein lagbhag 32 lakh hectare mein dhaan ki kheti hoti hai. Patna, Vaishali, Muzaffarpur, Darbhanga, Samastipur, Bhagalpur aur Purnia jaise jile dhaan utpadan mein sabse aage hain.
 
-Soil:
-- Clayey soil is ideal
-- Fields should retain water
+---
 
-Seed:
-- Use high-yield varieties
-- Examples: Swarna, IR64
+## Unnat Kisme (Improved Varieties)
 
-Fertilizer:
-- Use NPK fertilizers
-- Apply nitrogen in multiple stages
+Bihar ke liye kuch behtareen dhaan kisme hain:
 
-Common Pests:
-- Stem borer
-- Brown planthopper
+Rajendra Sweta: Yeh ek lokpriya variety hai jo 130 din mein taiyar hoti hai. Iska yield 22 quintal per acre tak hota hai. Yeh blast rog se ladne mein saksham hai.
 
-Diseases:
-- Blast disease
-- Bacterial leaf blight
+MTU-7029 (Swarna): Bihar ki sabse popular variety. 145 din mein taiyar, 25 quintal per acre yield. Iska swad achha hota hai aur bazar mein iska bhav bhi achha milta hai.
 
-Advice:
-- Maintain proper drainage
-- Avoid excessive fertilizer use
-- Use resistant varieties
+Pusa-44: Yeh variety sabse zyada paidawar deti hai — 28 quintal per acre tak. Lekin isko 155 din lagte hain. Jo kisan deri bardaash kar sakte hain unke liye yeh sabse behtar choice hai.
+
+Sita: Medium duration variety (115 din). Neechi zameen ke liye bahut upyukt hai jahan paani rok ke rakha ja sake.
+
+Sabhi kisan certified seed hi upyog karein. Khule baazar se beej na kharidein — naqli beej se utpadan bahut kam ho sakta hai.
+
+---
+
+## Nursery Tayar Karna
+
+Dhaan ki nursery May-June mein taiyar ki jati hai. Ek acre ke liye 8 kg beej ki zaroorat hoti hai.
+
+Pehle beej ko 24 ghante paani mein bhigoyein. Phir 48 ghante namdar kapde mein bandh karke ankhuan aane ka intezaar karein. Jab choti-choti ankuran nikalne lagein tab nursery bed par bochhado karein.
+
+Nursery bed ki mitti achhi tarah se bhurbhuri karo. 1 kg Trichoderma viride ko beej mein mila kar bochhado karo taaki beej ko rog se bachaya ja sake.
+
+---
+
+## Ropai (Transplanting)
+
+Ropai ka sahi samay July-August hai. Paudhe ki umra 25-30 din honi chahiye.
+
+Khatarein 20x15 cm ki doori par karo. Ek jagah par 2-3 paudhe lagao. Zyada ghani ropai mat karo nahi to rog aur keede zyada lagte hain.
+
+SRI (System of Rice Intensification) method mein ek hi paudha ek jagah lagaya jata hai aur zyada doori rakhi jati hai. Isse kam beej aur kam paani mein zyada paidawar milti hai.
+
+---
+
+## Khad aur Urvarak Prabandhan
+
+Dhaan mein teen baar urea dena chahiye:
+
+Pehli baar: 25 kg DAP aur 15 kg MOP ropai ke samay zameen mein milaein.
+Doosri baar: 25 kg urea ropai ke 21 din baad dein.
+Teesri baar: 20 kg urea ropai ke 45 din baad dein.
+
+Zinc ki kami Bihar ke dharawalon mein bahut aam hai. Ropai se pehle 5 kg Zinc Sulphate per acre zameen mein milaein. Agar patte peele padne lagein to foliar spray karein.
+
+Zyada urea dene se BPH aur blast ka khatra badh jata hai. Hamesha sahi matra mein khad dein.
+
+---
+
+## Sinchai (Irrigation)
+
+Dhaan mein zyada paani ki zaroorat hoti hai lekin hamesha dharawal kheti achhi nahi hoti. AWD (Alternate Wetting and Drying) method apnaein:
+
+Paani dharawal rakho jab tak 5 cm gehra na ho jaye. Phir 2-3 din ke liye paani hatao aur zameen ko sukhnae do. Fir se paani do. Is tarah karo to 30% paani bachat hoti hai aur yield bhi bilkul usi tarah rahti hai.
+
+Kuch stages mein hamesha paani rakhna zaroori hai: tillering, panicle initiation aur grain filling ke samay khet kabhi sukha mat rehne do.
+
+---
+
+## Pramukh Keede (Major Pests)
+
+Bhura Mahu (BPH): Ye chote bhoore keede hain jo podhe ki jadh ke paas rehte hain aur ras chooste hain. Patte peele pade aur ek jaga se gol-gol sukhne lagte hain — ise Hopperburn kehte hain. 10 keede per hill ho to turant Imidacloprid 17.8SL (125ml/acre) ka spray karein.
+
+Patta Lapettak (Leaf Folder): Patta nali ki tarah lapetta hua milega. Andar caterpillar hoga. Lambda-cyhalothrin 5EC (200ml/acre) spray karein.
+
+Tana Chedak (Stem Borer): Andar se tana khaya jata hai. Shuruat mein Dead Heart aur baad mein White Ear dikhta hai. Fipronil 0.3G granules (8kg/acre) khade paani mein daalein.
+
+---
+
+## Pramukh Rog (Major Diseases)
+
+Blast Rog: Patte par heere (diamond) jaisi aakruti ke dhabbey. Dhundh aur barish ke baad sabse zyada aata hai. Tricyclazole 75WP (120g/acre) ka spray pehle dhabbey dikhtey hi karein.
+
+Jivanu Patta Jhulsa (BLB): Patte ke kinare se peela rang aata hai. Flood ke baad zyada aata hai. Streptomycin + Tetracycline (Plantomycin) 100g/acre spray karein.
+
+---
+
+## Katai aur Gahaayi (Harvest & Threshing)
+
+Jab 80% dane sone jaise peele ho jaayein tab katai shuru karein. Samay par katai na karne se dane jhadne lagte hain.
+
+Combine harvester se katai sabse sasti aur fast hoti hai. Gahaayi ke baad dane ko 2-3 din dhoop mein sukhaein jab tak 14% se kam naami na ho jaye. Achhe bhandaran ke liye naami 12% se kam honi chahiye.
+
+---
+
+## MSP aur Bikri
+
+Bihar mein dhaan ka MSP (Minimum Support Price) 2024-25 mein Rs. 2300 per quintal hai. Sarkari kharidi November 1 se January 31 tak hoti hai. Registration ke liye dbtagriculture.bihar.gov.in par jaein ya Block Agriculture Office mein.
+
+---

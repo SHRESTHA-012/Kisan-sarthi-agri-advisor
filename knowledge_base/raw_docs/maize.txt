@@ -1,38 +1,88 @@
-Crop: Maize
+# Topic: Maize (Makka) — Complete Advisory for Bihar Farmers
+# Language: Hinglish
+# Region: Bihar, India
 
-Season:
-- Grown in Kharif, Rabi, and Zaid seasons
-- Main sowing time: June to July
+---
 
-Climate:
-- Temperature: 18°C to 27°C
-- Requires moderate rainfall and sunlight
+## Makka ki Kheti — Bihar ke liye Puri Jankari
 
-Soil:
-- Well-drained fertile loamy soil is best
-- Avoid waterlogged areas
+Makka Bihar ki ek pramukh Kharif fasal hai jo tezi se barhti jaa rahi hai. Kaimur, Rohtas, Aurangabad, Gaya, Nawada aur Jamui jile mein makka ki sabse zyada kheti hoti hai. Hybrid makka ki paidawar zyada hoti hai aur kisan isko poultry feed aur starch industry mein bech sakte hain.
 
-Seed:
-- Use certified hybrid seeds
-- Common varieties: DHM-117, HQPM-1
+---
 
-Fertilizer:
-- Requires Nitrogen, Phosphorus, and Potassium
-- Apply nitrogen in split doses
+## Behtareen Kisme
 
-Irrigation:
-- Irrigate during flowering and grain filling stages
-- Avoid excess water
+DKC-9141 (Hybrid): Bihar mein sabse popular hybrid. 95 din mein taiyar, 35 quintal per acre. Sukhe mein bhi kafi achha karta hai.
 
-Common Pests:
-- Fall armyworm
-- Stem borer
+P-3396 (Hybrid): 90 din, 32 quintal per acre. Iske dane ki quality bahut achhi hoti hai.
 
-Diseases:
-- Leaf blight
-- Downy mildew
+Vivek-9 (Composite): 75 din mein taiyar — sabse jaldi pakne wali variety. Jo kisan jaldi fasal lena chahte hain ya simit sinchai suvidha hai unke liye.
 
-Advice:
-- Monitor for pest attacks regularly
-- Maintain proper spacing between plants
-- Use crop rotation to reduce disease
+Note: Hybrid varieties mein zyada kharcha hota hai lekin paidawar bhi 50-60% zyada hoti hai. Composite varieties ka beej doosre saal dobara lagaya ja sakta hai lekin yield thodi kam hogi.
+
+---
+
+## Bowane ka Samay aur Tarika
+
+Sahi samay: 15 June se 15 July tak. Agar mansoon achha ho to June 15 se shuru karein.
+
+Beej: 8 kg per acre. Line ki doori 60 cm aur podhe ki doori 20 cm rakho. Ek jagah sirf ek beej lagao (single seed placement). Geharai 4 cm.
+
+Germination ke 15 din baad khali jagahon mein doosre podhe lagao (gap filling).
+
+---
+
+## Khad Prabandhan
+
+Makka mein Nitrogen ki bahut zaroorat hoti hai:
+
+Bowane ke samay: 40 kg DAP + 20 kg MOP zameen mein milaein.
+
+V4 stage (4 patte aane par): 30 kg Urea spray karein.
+
+V8 stage (ghuton tak unch jaane par): 30 kg Urea aur dein.
+
+Total Nitrogen: 120-130 kg N per hectare ki zaroorat hoti hai hybrid makke ke liye.
+
+---
+
+## Sinchai
+
+Makka ek baar bhi waterlogging bardaash nahi karta. Khet mein achhi drainage zaroori hai.
+
+5 baar sinchai deni chahiye: germination, knee-high, tasseling (phool aane), silking (silk aane) aur grain filling stage par.
+
+Silking stage sabse critical hai — is samay sukha padne par yield 50% tak gir sakti hai. Is stage par hamesha paani dein.
+
+---
+
+## Fall Armyworm (FAW) — Sabse Badi Samasya
+
+Fall Armyworm (Spodoptera frugiperda) pichle kuch saalon mein Bihar mein bahut badi samasya bani hai. Yeh ek caterpillar hai jo patte ka whorl andar se khata hai.
+
+Pehchaan: Caterpillar ke sar par ulta Y ka nishaan hota hai. Whorl mein baar aur holes dikhte hain. Taaza excreta (frass) bhi dikhai deta hai.
+
+Monitoring: Pheromone traps lagaein — 1 trap per 2 acre. Weekly check karein. 8 moth per trap per week milne par action lein.
+
+Ilaaj:
+- Jaldi stage mein sand ya raakh whorl mein daalna kafi effective hai
+- Bacillus thuringiensis (Bt) spray karein
+- Chemical: Emamectin Benzoate 5SG (80g/acre) whorl mein direct spray karein
+
+---
+
+## Pramukh Rog
+
+Patta Jhulsa (Turcicum Leaf Blight): Patte par lambi aur chaudi grey-tan dhabbey nikaltey hain neeche se upar ki taraf. Humidity zyada hone par tezi se failta hai. Mancozeb 75WP (600g/acre) spray karein.
+
+---
+
+## Katai aur Bhandaran
+
+Katai tab karein jab chhilka (husk) sukh jaaye aur dane ki naami 20-25% ho. Combine ya manual dono se ho sakti hai.
+
+Katai ke baad dane ko dhoop mein sukhaein. Bazar mein bechne se pehle naami 14% se kam karo. Zyada naami ke saath bhandaran se aflatoxin banta hai jo bahut khatarnak hai.
+
+MSP 2024-25: Rs. 2225 per quintal. NAFED ke through sarkari kharidi hoti hai.
+
+---

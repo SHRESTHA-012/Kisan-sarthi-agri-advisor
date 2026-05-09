@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "state": "Bihar",
+    "last_updated": "2025-04-01",
+    "version": "1.0",
+    "source": "ICAR-RCER Patna / IMD Agrimet Division",
+    "weather_api": "OpenWeatherMap",
+    "alert_channel": "WhatsApp / Telegram push notification"
+  },
+  "bihar_climate_zones": {
+    "north_bihar": {
+      "districts": ["Champaran", "Sitamarhi", "Sheohar", "Muzaffarpur", "Darbhanga", "Madhubani", "Supaul", "Saharsa", "Madhepura", "Purnia", "Kishanganj", "Araria", "Katihar"],
+      "climate": "Sub-humid, flood-prone, high rainfall",
+      "avg_annual_rainfall_mm": 1200,
+      "flood_risk": "high"
+    },
+    "south_bihar": {
+      "districts": ["Patna", "Gaya", "Nalanda", "Nawada", "Aurangabad", "Arwal", "Jehanabad", "Rohtas", "Kaimur", "Buxar", "Bhojpur"],
+      "climate": "Semi-arid to sub-humid, drought-prone in some blocks",
+      "avg_annual_rainfall_mm": 900,
+      "flood_risk": "low",
+      "drought_risk": "medium"
+    },
+    "east_bihar": {
+      "districts": ["Bhagalpur", "Banka", "Jamui", "Munger", "Lakhisarai", "Sheikhpura", "Begusarai", "Khagaria", "Samastipur", "Vaishali"],
+      "climate": "Sub-humid, Koshi flood belt",
+      "avg_annual_rainfall_mm": 1100,
+      "flood_risk": "medium-high"
+    }
+  },
+  "crop_weather_thresholds": [
+    {
+      "crop_id": "C001",
+      "crop_name": "Paddy",
+      "growth_stages": [
+        {
+          "stage": "Germination / Nursery",
+          "duration_days": "0-25",
+          "optimal": {
+            "temp_min_c": 22,
+            "temp_max_c": 35,
+            "humidity_percent": 70,
+            "rainfall_mm_per_week": "50-100"
+          },
+          "stress_thresholds": {
+            "heat_stress": { "temp_c": 38, "alert": "High temperature may reduce germination. Provide shade net or irrigate nursery." },
+            "cold_stress": { "temp_c": 18, "alert": "Low temperature will slow germination. Delay transplanting." },
+            "excess_rain": { "rainfall_mm_24hr": 80, "alert": "Heavy rain may damage nursery beds. Ensure drainage." }
+          }
+        },
+        {
+          "stage": "Tillering",
+          "duration_days": "25-55",
+          "optimal": {
+            "temp_min_c": 25,
+            "temp_max_c": 33,
+            "humidity_percent": 75,
+            "water_depth_cm": "2-5"
+          },
+          "stress_thresholds": {
+            "heat_stress": { "temp_c": 37, "alert": "Heat stress at tillering reduces tiller number. Maintain water level." },
+            "pest_risk": { "humidity_percent": 85, "alert": "High humidity increases BPH and Leaf Folder risk. Scout field immediately." },
+            "flood": { "water_depth_cm": 25, "duration_days": 3, "alert": "Submergence beyond 3 days will kill plants. Check for flood-tolerant varieties next season." }
+          }
+        },
+        {
+          "stage": "Panicle Initiation / Flowering",
+          "duration_days": "55-85",
+          "optimal": {
+            "temp_min_c": 24,
+            "temp_max_c": 32,
+            "humidity_percent": 70
+          },
+          "stress_thresholds": {
+            "heat_stress": { "temp_c": 35, "alert": "CRITICAL: High temp at flowering causes spikelet sterility. Irrigate in evening." },
+            "cold_stress": { "temp_c": 20, "alert": "Cold at flowering causes poor grain set. Keep field flooded." },
+            "blast_risk": { "humidity_percent": 90, "temp_range_c": [24, 28], "alert": "Blast disease risk is HIGH. Spray Tricyclazole 75WP immediately." }
+          }
+        },
+        {
+          "stage": "Grain Filling / Maturity",
+          "duration_days": "85-120",
+          "optimal": {
+            "temp_min_c": 20,
+            "temp_max_c": 30
+          },
+          "stress_thresholds": {
+            "rain_at_harvest": { "rainfall_mm_24hr": 30, "alert": "Rain near harvest will delay cutting and cause grain discoloration. Plan harvest window carefully." },
+            "heat_stress": { "temp_c": 34, "alert": "High temp reduces grain weight. Maintain irrigation." }
+          }
+        }
+      ]
+    },
+    {
+      "crop_id": "C002",
+      "crop_name": "Wheat",
+      "growth_stages": [
+        {
+          "stage": "Sowing / Germination",
+          "duration_days": "0-20",
+          "optimal": {
+            "temp_min_c": 15,
+            "temp_max_c": 25,
+            "soil_moisture": "field capacity"
+          },
+          "stress_thresholds": {
+            "heat_stress": { "temp_c": 28, "alert": "Too warm for wheat germination. Delay sowing or pre-soak seeds." },
+            "frost": { "temp_c": 3, "alert": "Frost risk. Cover seed beds if possible." }
+          }
+        },
+        {
+          "stage": "Tillering / Jointing",
+          "duration_days": "20-60",
+          "optimal": {
+            "temp_min_c": 12,
+            "temp_max_c": 20
+          },
+          "stress_thresholds": {
+            "rust_risk": { "humidity_percent": 80, "temp_range_c": [10, 18], "alert": "Yellow rust risk HIGH. Scout crop. Spray Propiconazole 25EC if pustules appear." },
+            "aphid_risk": { "temp_c": 20, "humidity_percent": 60, "alert": "Aphid conditions favorable. Check 10 shoots per acre." }
+          }
+        },
+        {
+          "stage": "Flowering / Grain Fill",
+          "duration_days": "60-100",
+          "optimal": {
+            "temp_min_c": 15,
+            "temp_max_c": 25
+          },
+          "stress_thresholds": {
+            "heat_stress": { "temp_c": 30, "duration_days": 2, "alert": "CRITICAL: Terminal heat stress. Irrigate immediately. Can cause 30-40% yield loss." },
+            "rain_at_flowering": { "rainfall_mm_24hr": 20, "alert": "Rain at flowering may cause Karnal Bunt. Monitor crop." }
+          }
+        }
+      ]
+    },
+    {
+      "crop_id": "C003",
+      "crop_name": "Maize",
+      "growth_stages": [
+        {
+          "stage": "Germination",
+          "duration_days": "0-10",
+          "stress_thresholds": {
+            "cold_stress": { "temp_c": 12, "alert": "Maize germination fails below 12°C. Do not sow early." },
+            "heat_stress": { "temp_c": 40, "alert": "Soil surface too hot. Sow in evening, irrigate lightly." }
+          }
+        },
+        {
+          "stage": "Knee High to Tasseling",
+          "duration_days": "30-65",
+          "stress_thresholds": {
+            "FAW_risk": { "temp_min_c": 25, "humidity_percent": 60, "alert": "Fall Armyworm conditions favorable. Check whorl for frass. Set pheromone traps." },
+            "waterlogging": { "duration_hours": 48, "alert": "Maize cannot tolerate waterlogging. Drain field within 48 hours or yield loss occurs." }
+          }
+        },
+        {
+          "stage": "Silking / Pollination",
+          "duration_days": "65-80",
+          "stress_thresholds": {
+            "heat_stress": { "temp_c": 38, "alert": "CRITICAL: Heat at silking kills pollen. Irrigate twice daily." },
+            "drought": { "rainfall_mm_2weeks": 20, "alert": "Drought at silking = severe yield loss. Irrigate immediately." }
+          }
+        }
+      ]
+    },
+    {
+      "crop_id": "C005",
+      "crop_name": "Mustard",
+      "growth_stages": [
+        {
+          "stage": "Vegetative",
+          "duration_days": "0-40",
+          "stress_thresholds": {
+            "aphid_risk": { "temp_range_c": [15, 22], "humidity_percent": 65, "alert": "Mustard aphid conditions favorable. Scout regularly. Spray Dimethoate if >20 aphids/plant." }
+          }
+        },
+        {
+          "stage": "Flowering",
+          "duration_days": "40-70",
+          "stress_thresholds": {
+            "frost": { "temp_c": 2, "alert": "Frost at flowering causes flower drop. Cover with straw mulch if possible." },
+            "white_rust_risk": { "humidity_percent": 80, "temp_range_c": [10, 18], "alert": "White Rust risk HIGH. Spray Mancozeb 75WP." }
+          }
+        }
+      ]
+    },
+    {
+      "crop_id": "C007",
+      "crop_name": "Potato",
+      "growth_stages": [
+        {
+          "stage": "Tuber Initiation",
+          "duration_days": "20-45",
+          "stress_thresholds": {
+            "heat_stress": { "temp_c": 25, "alert": "High temp inhibits tuber formation. Potato needs cool nights (15-18°C)." }
+          }
+        },
+        {
+          "stage": "Tuber Bulking",
+          "duration_days": "45-80",
+          "stress_thresholds": {
+            "late_blight_risk": { "humidity_percent": 90, "temp_range_c": [10, 20], "duration_hours": 10, "alert": "LATE BLIGHT ALERT: Conditions highly favorable. Spray Metalaxyl+Mancozeb immediately. Repeat every 7 days." },
+            "frost": { "temp_c": 0, "alert": "Frost will damage foliage and expose tubers. Earth up immediately. Spray water before frost." }
+          }
+        }
+      ]
+    }
+  ],
+  "general_weather_alerts": [
+    {
+      "alert_type": "heavy_rainfall",
+      "threshold_mm_24hr": 65,
+      "severity": "high",
+      "advisory": "Heavy rain expected. Ensure proper drainage in all fields. Postpone spray operations. Do not apply fertilizer."
+    },
+    {
+      "alert_type": "very_heavy_rainfall",
+      "threshold_mm_24hr": 115,
+      "severity": "very_high",
+      "advisory": "Flood risk high. Keep pumps ready for drainage. Do not go to fields. Contact block agriculture officer."
+    },
+    {
+      "alert_type": "heatwave",
+      "threshold_temp_c": 42,
+      "duration_days": 2,
+      "severity": "high",
+      "advisory": "Heatwave conditions. Irrigate all crops in early morning. Do not spray pesticides. Ensure livestock have water and shade."
+    },
+    {
+      "alert_type": "cold_wave",
+      "threshold_temp_c": 4,
+      "severity": "medium",
+      "advisory": "Cold wave alert. Irrigate wheat and potato fields (water retains heat). Cover nursery beds with polytene."
+    },
+    {
+      "alert_type": "fog",
+      "visibility_m": 200,
+      "duration_days": 3,
+      "severity": "medium",
+      "advisory": "Dense fog increases disease risk in wheat and potato. Scout for rust and blight. Avoid sowing operations."
+    },
+    {
+      "alert_type": "dry_spell",
+      "no_rain_days": 14,
+      "severity": "medium",
+      "advisory": "Dry spell alert. Prioritize irrigation for paddy, sugarcane, and vegetables. Check soil moisture before irrigating other crops."
+    }
+  ],
+  "imd_district_stations": {
+    "Patna": { "station_id": "42492", "lat": 25.6, "lon": 85.1 },
+    "Gaya": { "station_id": "42503", "lat": 24.8, "lon": 85.0 },
+    "Muzaffarpur": { "station_id": "42473", "lat": 26.1, "lon": 85.4 },
+    "Bhagalpur": { "station_id": "42516", "lat": 25.2, "lon": 87.0 },
+    "Darbhanga": { "station_id": "42469", "lat": 26.2, "lon": 85.9 },
+    "Purnia": { "station_id": "42475", "lat": 25.8, "lon": 87.5 },
+    "Champaran": { "station_id": "42461", "lat": 26.8, "lon": 84.9 }
+  }
+}

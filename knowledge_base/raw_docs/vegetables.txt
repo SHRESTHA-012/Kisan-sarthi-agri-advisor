@@ -1,39 +1,99 @@
-Topic: Vegetable Farming
+# Topic: Vegetables Advisory — Bihar Farmers
+# Language: Hinglish
+# Covers: Potato, Tomato, Onion, Brinjal, Cauliflower, Bitter Gourd
 
-Common Vegetables:
-- Tomato
-- Potato
-- Brinjal
-- Cauliflower
-- Okra
+---
 
-Climate:
-- Most vegetables need sunlight and moderate temperature
-- Avoid extreme heat and frost
+## Aalu (Potato) — Bihar ki Sabse Important Sabzi
 
-Soil:
-- Fertile loamy soil with good drainage is ideal
+Bihar mein Nalanda, Patna, Vaishali aur Muzaffarpur jile mein aalu sabse zyada ugaya jata hai. October-November mein lagao aur January-February mein katai karo.
 
-Irrigation:
-- Water regularly
-- Avoid overwatering
+Behtareen Kisme: Kufri Jyoti (90 din, 10 ton/acre), Kufri Bahar (100 din, 12 ton/acre), Kufri Sindhuri (120 din, 14 ton/acre — laal chilka, best keeping quality).
 
-Fertilizer:
-- Use compost and balanced fertilizers
-- Organic manure improves soil quality
+Beej Kandon ki Taiyari: Pramanikat seed tuber hi use karein. 40-50g wale kane sabse behtar hote hain. Bowane se pehle Mancozeb 0.2% solution mein 30 min tak duboin.
 
-Common Pests:
-- Aphids
-- Fruit borers
-- Whiteflies
+Bowana: Katon ki doori 60 cm aur podhe ki doori 20 cm. Geharai 8 cm. Ek acre mein 1 ton seed chahiye.
 
-Diseases:
-- Wilt disease
-- Leaf spot
-- Powdery mildew
+Khad: 60 kg DAP + 60 kg MOP bowane ke samay. 40 kg Urea earthing up ke samay (30 din baad).
 
-Advice:
-- Use healthy seeds
-- Remove infected plants quickly
-- Practice crop rotation
-- Use mulching to conserve moisture
+Pramukh Rog — Late Blight: Yeh sabse khatarnak bimari hai. Patte par kaale-bhoore dhabbey, neeche safed fungus dikhai deta hai. Thandi raat (10-20°C) + fog = blight ka mahaul. Metalaxyl+Mancozeb (Ridomil MZ) 600g/acre spray karein. Har 7 din mein dohraein.
+
+Katai: Jab tatnaa (vine) sukh jaaye aur chhalka mat chhile tab katai karein. Sukte ki jaach: ek aalu ka chhalka anguthe se ragadein — agar na chhile to taiyar hai.
+
+Cold Storage: Nalanda mein bahut cold storage hain. Agar bazar mein bhav kam ho to February-March mein store karein aur May-June mein bechein — zyada faida hoga.
+
+---
+
+## Tamatar (Tomato)
+
+Bihar mein tamatar sal bhar ugaya jata hai. Rabi tamatar (October-November bowana) sabse achha hota hai kyunki garamion mein bhav zyada milta hai.
+
+Behtareen Kisme: Pusa Ruby (open pollinated), Arka Rakshak (hybrid — late blight resistant), NS-585 (hybrid — zyada yield).
+
+Nursery: 8x3 feet ki raised bed mein nursery taiyar karein. 25-30 din ki paudhe ropein.
+
+Doori: 60x45 cm. Stake (bamboo stick) lagaein paudhon ko sahara dene ke liye.
+
+Khad: 50 kg DAP + 30 kg MOP ropai ke samay. 25 kg Urea flowering par aur dobara fruiting par dein.
+
+Sinchai: Drip irrigation sabse best hai tamatar ke liye. Irregular irrigation se Blossom End Rot hoti hai — iske liye Calcium Nitrate (1%) spray karein.
+
+Pramukh Keede: Tomato Fruit Borer (Helicoverpa) sabse bada dushman hai. Pheromone traps lagaein. Spinosad 45SC (75ml/acre) spray karein. Early Blight ke liye Mancozeb spray karein.
+
+Katai: Ropai ke 60-70 din baad pehli katai shuru. Bazar ke liye halke laal rang mein kato.
+
+---
+
+## Pyaaz (Onion)
+
+Bihar mein pyaaz Rabi season mein (October-November bowana) aur Kharif mein (June-July bowana) dono ugaya jata hai.
+
+Kisme: Agrifound Light Red, N-2-4-1, Arka Kalyan.
+
+Nursery: August mein nursery tayar karo (Kharif ke liye). Raised beds par 10 kg beej per acre nursery ke liye.
+
+Ropai: 45 din ki paudhe lagaein. Doori: 15x10 cm.
+
+Pramukh Rog: Purple Blotch — patte par halke bhoore ya neele dhabbey. Mancozeb (600g/acre) ya Iprodione spray karein.
+
+Thrips: Bahut chote keede patte ko khurachte hain. Fipronil 5SC (400ml/acre) spray karein.
+
+Katai aur Curing: Jab 50% plants gir jayein (neck fall) tab katai karein. Katai ke baad 10-15 din chhaya mein sukhaein (curing). Curing ke baad hi store karein — isse shelf life 4-6 mahine ho jati hai.
+
+---
+
+## Baigan (Brinjal / Eggplant)
+
+Bihar mein sal bhar tamatar ke saath baigan bhi ugaya jata hai.
+
+Kisme: Pusa Purple Long, Arka Nidhi, Swarna Pratibha (Bihar Agricultural University variety).
+
+Ropai: Nursery se 30-35 din ki paudhe lagaein. Doori 60x60 cm.
+
+Pramukh Keeda — Shoot & Fruit Borer: Yeh sabse badi samasya hai. Nayi shoots andar se khali milti hain aur phal andar se khaya hua hota hai. Neem based spray + Spinosad spray karein. Pheromone trap lagaein.
+
+Kharab rog: Little Leaf Disease (Phytoplasma) — patte chote ho jaate hain, paudha jhada jaisa dikhta hai. Koi ilaaj nahi — ukhad kar jalao. Veer-sa failaane wale keede (Leafhopper) ko Imidacloprid se niyantrit karo.
+
+---
+
+## Phool Gobi (Cauliflower)
+
+September-October mein lagane par February-March mein taiyar hoti hai.
+
+Kisme: Pusa Snowball K-1, Pusa Meghna (early), Pata Gobi ke liye Kaveri, Golden Acre.
+
+Boron ki Kami: Bihar ki mittiyon mein Boron aksar kam hota hai. Iske bina phool ka andar kaala ho jata hai (Browning) ya phool nahi banta (Hollow Stem). Bowane se pehle 1 kg Borax per acre zameen mein milao. Paudhon par 0.3% Borax spray karo.
+
+---
+
+## Karela (Bitter Gourd)
+
+Karela Kharif mein (June-July) aur zaid mein (February-March) ugaya jata hai.
+
+Kisme: Pusa Do Mausami, Arka Harit, Preethi.
+
+Machaan system par ugane se paidawar 40% zyada hoti hai. Pandal banao aur bail ko upar chadne do.
+
+Pollination: Makkhi aur madhumakhi se pollination hoti hai. Insecticide ka spray subah mein mat karo jab pollinator active hote hain.
+
+---
