@@ -34,7 +34,7 @@ def create_vector_store():
     print(f"Loaded {len(docs)} chunks")
 
     embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+        model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
     )
 
     db = FAISS.from_documents(docs, embeddings)
