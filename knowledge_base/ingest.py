@@ -1,7 +1,6 @@
 import os
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # 📁 Paths
 DATA_PATH = "knowledge_base/raw_docs"
@@ -32,23 +31,30 @@ def load_documents():
 
 
 def split_documents(documents):
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=300,      # 🔥 IMPORTANT (better retrieval)
-        chunk_overlap=50
-    )
-
     chunks = []
 
     for doc in documents:
-        split_texts = splitter.split_text(doc["text"])
+        text = doc["text"]
 
-        for chunk in split_texts:
+        # 🔥 Split based on your custom section separator
+        sections = text.split("\n---\n")
+
+        for section in sections:
+            section = section.strip()
+
+            # Skip very small/noisy chunks
+            if len(section) < 80:
+                continue
+
+            # ✅ Add source context for better retrieval
+            chunk_text = f"Source: {doc['source']}\n{section}"
+
             chunks.append({
-                "text": chunk,
+                "text": chunk_text,
                 "source": doc["source"]
             })
 
-    print(f"✂️ Created {len(chunks)} chunks")
+    print(f"✂️ Created {len(chunks)} section-based chunks")
     return chunks
 
 
