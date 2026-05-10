@@ -1,23 +1,202 @@
-Topic: Government Schemes for Farmers (India/Bihar)
+# Topic: Government Schemes Advisory for Bihar Farmers
+# Language: Hinglish (Hindi + English)
+# Region: Bihar, India
+# Format: Each section separated by --- for RAG chunking
 
-PM-KISAN:
-- Provides ₹6000 per year to farmers
-- Paid in three installments
+---
 
-Soil Health Card:
-- Provides information about soil nutrients
-- Helps in proper fertilizer use
+## Sarkari Yojanaein — Aapka Haq Hai
 
-Pradhan Mantri Fasal Bima Yojana:
-- Crop insurance scheme
-- Protects against crop loss
+Bihar ke kisanon ke liye bahut si sarkari yojanaein hain jo seedha bank account mein paisa deti hain, bima deti hain, loan deti hain aur kheti ka saman sasta deti hain. Inka fayda uthana aapka adhikar hai. Is guide mein sabse zaroori yojanaein asan bhasha mein samjhaayi gayi hain.
 
-Kisan Credit Card:
-- Provides easy loans for farming
+---
 
-Subsidies:
-- Available for seeds, fertilizers, and equipment
+## PM Kisan Samman Nidhi — Saal Mein Rs. 6000
 
-Advice:
-- Register through local agriculture office
-- Keep documents ready
+Yah kya hai: Bharat sarkar ki sabse important kisan yojana. Har kisan parivar ko saal mein 3 kiston mein Rs. 6000 diye jaate hain — Rs. 2000 har 4 mahine mein seedha bank account mein.
+
+Kaun le sakta hai: Jo kisan ke paas zameen hai aur jinka parivar income tax nahi bharta. Sarkari naukri karne wale is yojana ke liye eligible nahi hain.
+
+Kaise karein registration:
+Step 1: pmkisan.gov.in par jaein ya CSC (Common Service Centre) jaein
+Step 2: "New Farmer Registration" par click karein
+Step 3: Aadhaar number daalo
+Step 4: Zameen ki jankari bharo (Khasra/Khata number)
+Step 5: Bank account details bharo — Aadhaar se linked hona chahiye
+
+Lagenge documents: Aadhaar card, bank passbook, zameen ka khatian/jamabandi, mobile number.
+
+Status check karein: pmkisan.gov.in par "Beneficiary Status" mein apna Aadhaar ya mobile dalein.
+
+Paisa nahi aaya to kya karein: Pehle check karo ki Aadhaar bank se linked hai ya nahi. Block Agriculture Office jaao aur Beneficiary Status mein "Pending for Approval" ka karan puchho.
+
+Helpline: 155261 ya 011-24300606
+
+---
+
+## Bihar Rajya Fasal Sahayata Yojana — Fasal Kharab Hone Par Paisa
+
+Yah kya hai: Bihar sarkar ki apni yojana. Agar aapki fasal kudrat ki maar se kharab ho — baarish, baadh, sukha — to sarkar seedha bank mein paisa deti hai. Koi premium nahi bharni padti.
+
+Kitna milega:
+20% tak nuksan: Rs. 7,500 per hectare
+20% se zyada nuksan: Rs. 10,000 per hectare
+Maximum 2 hectare tak ka faida milega.
+
+Kharif mein konsi faslen: Dhaan, Makka, Soybean
+Rabi mein konsi faslen: Gehun, Makka, Masur, Arhar, Chana, Sarson, Aalu
+
+Kaise karein registration:
+Step 1: dbtagriculture.bihar.gov.in par jaein
+Step 2: "Fasal Sahayata" link par click karein
+Step 3: Aadhaar-linked mobile par OTP aayega
+Step 4: Fasal aur zameen ki jankari bharo
+Step 5: Self-declaration form submit karo
+
+Important: Registration fasal ugane ke PEHLE karni hoti hai. Baad mein register karne par paisa nahi milega.
+
+Kharif registration: July 31 tak
+Rabi registration: November 31 tak
+
+Helpline: 1800-345-6188 (toll free)
+
+---
+
+## Pradhan Mantri Fasal Bima Yojana (PMFBY) — Fasal Bima
+
+Yah kya hai: Agar fasal natural aapadaon, rog ya keede se kharab ho to insurance company nuksan bharta hai.
+
+Premium kitna lagta hai:
+Kharif faslen: Sirf 2% of sum insured
+Rabi faslen: Sirf 1.5% of sum insured
+Baaki premium sarkar bhati hai.
+
+Enrollment:
+Kharif mein: July 31 tak
+Rabi mein: December 31 tak
+Kisi bhi bank branch ya CSC center mein jaein.
+
+Jo loan lete hain (loanee farmers) unka enrollment automatic hota hai — bank khud enroll kar deta hai.
+
+Claim kaise karein:
+Step 1: Fasal kharab hone ke 72 ghante ke andar insurance company ya bank ko inform karein
+Step 2: Crop Loss Intimation Form bharo
+Step 3: Rajya sarkar aur insurance company milkar survey karenge
+Step 4: Survey ke baad seedha bank mein paisa aayega
+
+Helpline: 1800-200-7710
+
+---
+
+## Kisan Credit Card (KCC) — Sasta Loan
+
+Yah kya hai: Kisan ka credit card. Isse kisan beej, khad, keetnashak khareedne ke liye turant loan le sakta hai. Baar baar bank nahi jaana padta.
+
+Faida:
+Rs. 3 lakh tak ka loan sirf 4% effective byaaj par (7% hota hai lekin 3% sarkar ki taraf se wapas milti hai agar samay par chukao)
+Limit: Fasal ki laagat ke hisaab se bank calculate karta hai
+
+Kaun le sakta hai: Kisan, bataidedar (tenant), aadhiyakar, SHG members.
+
+Documents: Aadhaar, zameen ka record ya lease agreement, photo, bank account.
+
+Kaise karein apply:
+Step 1: Nazdiki bank mein jaein — SBI, PNB, UCO, Bihar Gramin Bank
+Step 2: KCC application form bharo
+Step 3: Zameen ke documents jama karein
+Step 4: 2-4 hafte mein card milega
+
+Helpline: 1800-180-1551
+
+---
+
+## Krishi Yantra Subsidy (SMAM) — Machine Par 50% Chut
+
+Yah kya hai: Sarkar tractor, rotavator, combine harvester, sprayer, paddy transplanter jaise machines par 40-50% subsidy deti hai.
+
+Kitni subsidy:
+General farmers: 40%
+SC/ST aur chote-seema kisan: 50%
+
+Eligible machines: Tractor (70 HP tak), Rotavator, Paddy Transplanter, Combine Harvester, Power Sprayer, Zero Till Drill, Happy Seeder, Thresher, Reaper.
+
+Kaise karein apply:
+Step 1: agrimachinery.nic.in ya farmech.bih.nic.in par jaein
+Step 2: Online registration karein
+Step 3: Lottery system se selection hoga
+Step 4: Selection hone par nazdiki dealer se machine kharidein aur subsidy seedha bank mein aayegi
+
+Important: Pehle registration karein, phir machine kharidein. Pahle khareedne par subsidy NAHI milegi.
+
+Helpline: 0612-2547066
+
+---
+
+## PM Kisan Maandhan Yojana — Vridhavastha Pension
+
+Yah kya hai: Chote aur seema kisanon ke liye pension yojana. 60 saal ki umra ke baad Rs. 3000 per month pension milti hai.
+
+Kaun le sakta hai: 18-40 saal ke kisan jinke paas 2 hectare tak zameen hai.
+
+Contribution kitna:
+18 saal mein entry: Rs. 55 per month dein
+40 saal mein entry: Rs. 200 per month dein
+Utna hi sarkar bhi degi.
+
+Kaise join karein: CSC center par jaein ya pmkmy.gov.in par. Aadhaar aur bank passbook le jaein.
+
+Helpline: 1800-267-6888
+
+---
+
+## Mukhyamantri Bagwani Mission — Phal-Sabzi Par Subsidy
+
+Yah kya hai: Bihar mein phal aur sabzi ki kheti badhane ke liye subsidy.
+
+Kya milega:
+Sabzi ki kheti: Rs. 10,000 se Rs. 50,000 per hectare (fasal ke hisaab se)
+Phal ke podhe: 50% subsidy
+Drip/Sprinkler irrigation: 50-90% subsidy
+Mushroom unit: Rs. 50,000 subsidy per unit
+
+Kaise apply karein: horticulture.bihar.gov.in par ya District Horticulture Office mein.
+
+Helpline: 0612-2547770
+
+---
+
+## Soil Health Card — Free Mitti Jaanch
+
+Yah kya hai: Sarkar free mein aapki mitti ki jaanch karti hai aur ek card deti hai jisme bataya jata hai ki kis cheez ki kami hai aur kitni khad deni chahiye.
+
+Kaise milega: Block Agriculture Office mein jaein. Apne khet ki mitti ka sample lao. 3-4 hafte mein card milega.
+
+Faida: Sahi matra mein khad dene se 15-20% paise bachte hain aur paidawar bhi badhti hai.
+
+---
+
+## DBT Agriculture Bihar Portal — Sabka Gateway
+
+Website: dbtagriculture.bihar.gov.in
+
+Yahan se ye sab kaam hote hain:
+- PM Kisan registration
+- Fasal Sahayata registration
+- Beej subsidy
+- Krishi yantra subsidy
+- Kisan Credit Card apply
+- PMFBY enrollment
+
+Ek baar registration karein — baar baar kaam aayega.
+
+Toll Free Helpline: 1800-345-6188
+District Agriculture Office: Apne jile ka number block office se milega.
+
+---
+
+## Kisan Call Centre — Free Agricultural Advice
+
+Number: 1800-180-1551 (Toll Free, 24x7)
+Yahan trained agricultural experts se khet ki samasya, khad, rog, mausam — kuch bhi pooch sakte hain. Hindi mein baat kar sakte hain.
+
+---

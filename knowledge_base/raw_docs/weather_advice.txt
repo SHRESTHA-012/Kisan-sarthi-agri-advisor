@@ -1,25 +1,163 @@
-Topic: Weather-based Farming Advice
+# Topic: Weather Advisory for Bihar Farmers
+# Language: Hinglish (Hindi + English)
+# Region: Bihar, India
+# Format: Each section separated by --- for RAG chunking
 
-Rain:
-- Ensure proper drainage in heavy rain
-- Avoid waterlogging
+---
 
-Drought:
-- Use drought-resistant crops
-- Practice water conservation
+## Mausam aur Kheti — Samajhna Zaroori Hai
 
-Cold:
-- Protect crops from frost
-- Use light irrigation to reduce damage
+Bihar ka mausam kaafi unpredictable hai. Uttar Bihar mein baadh aur Dakshin Bihar mein sukha — yahi Bihar ki dono badi musibatein hain. Iske alawa pala (frost), luh (heatwave), dense fog aur unseasonal barish bhi pareshani deti hai. Sahi samay par mausam ki jankari se aap apni fasal aur mehnat dono bacha sakte hain.
 
-Heat:
-- Irrigate crops regularly
-- Use mulching to retain moisture
+---
 
-Wind:
-- Protect crops using barriers
-- Avoid spraying during strong winds
+## Bihar ke Mausam ke Chaar Mauzam
 
-Advice:
-- Check weather forecast regularly
-- Plan sowing and irrigation accordingly
+Garmi (March – May):
+Temperature 35-45°C tak. Luh (hot dry wind) chalti hai. Is samay ki faslen — tarbuz, kheera, lauki jaise Zaid crops — mein zyada sinchai chahiye. Wheat ki grain filling stage is period mein padti hai — terminal heat stress se bachne ke liye samay par sinchai zaroori hai.
+
+Barish (June – September) — Monsoon:
+Bihar mein average 1000-1200mm barish hoti hai. Uttar Bihar mein zyada, Dakshin Bihar mein thodi kam. June-July mein Dhaan aur Makka bote hain. August-September mein kabhi zyada kabhi kam barish se fasal prabhavit hoti hai.
+
+Sharad Ritu (October – November):
+Dhaan aur Makka ki katai. Sarson aur Masur ki buwai ka sahi samay. Mausam achha rehta hai — kaam karne ke liye best time.
+
+Sardi (November – February):
+Gehun ki major season. December-January mein dense fog 7-15 din tak rehti hai. Pala (frost) bhi padta hai. Mahu (aphid) ka peak time.
+
+---
+
+## Baadh (Flood) — Uttar Bihar ki Badi Samasya
+
+Bihar mein Bagmati, Gandak, Koshi, Budhi Gandak, Kamla jaise nadiya har saal aaplaavit hoti hain. Champaran, Sitamarhi, Darbhanga, Madhubani, Supaul, Saharsa jile sabse zyada affected hain.
+
+Baadh se pehle kya karein:
+Dhaan ki katai agar 80% pakki ho to turant karo — baadh ka intezaar mat karo
+Godown aur ghar se anaj upar rakho
+Khad aur davayein safe jagah rakho
+Tractor aur pump set surakshit karo
+
+Baadh ke dauran:
+Khet mein mat jaao — paani mein bijli ka khatra hota hai
+Pashuo ko uchhe sthan par le jaao
+Block Agriculture Officer se sampark karo
+
+Baadh ke baad kya karein:
+Paani hatne ke baad jaldi khet saaf karo
+Dhaan ke khet mein paani nikaalo aur Potash (MOP) daalein — yeh plants ko recover karne mein madad karta hai
+Kharab fasal ko recovery ke liye NPK spray karein: 13-00-45 (200g/acre foliar)
+Naqsaan ka panchaayat ya block officer se survey karwaein — Fasal Sahayata Yojana mein claim ke liye zaroori hai
+
+---
+
+## Sukha (Drought) — Dakshin Bihar ki Samasya
+
+Gaya, Nawada, Aurangabad, Rohtas, Kaimur jile mein kabhi kabhi sukhe ki samasya hoti hai — khaaskar July-August mein jab monsoon late ya weak hota hai.
+
+Kya karein sukhe mein:
+Dhaan: Alternate Wetting and Drying (AWD) method apnao — 30% paani bachega
+Makka: Tasseling aur silking stage par sinchai zaroor karein — is samay sukha padna sab se ziyadah nuksandeh hai
+Weeding karo — kharpatwar fasal ka paani churate hain
+Mulching karo — bhusa ya pattiyaan bichhao zameen par taaki naami bane rahe
+
+Drought-tolerant varieties:
+Dhaan: Sahbhagi Dhan, Rajendra Bhagwati (Bihar Agriculture University)
+Makka: Vivek-9 (composite, sukha sehne wala)
+
+---
+
+## Luh / Garmi Ki Lahar (Heatwave)
+
+April-May mein temperature 42-45°C tak pohuche to Luh ki sthiti hoti hai.
+
+Fasal par asar:
+Gehun mein grain shriveling — dana chhota aur halka ho jata hai
+Makka mein pollen sterility
+Sabziyon mein flower drop
+
+Kya karein:
+Subah ya shaam ko sinchai karein — dopahar ki sinchai se zameen mein bhaap banta hai
+Foliar spray karein paani se — temperature neeche aata hai
+Kaolin clay (6%) spray karo — patte cool rehte hain (advanced technique)
+Dhyan: Is mausam mein spray mat karein — dawai ud jaati hai
+
+---
+
+## Pala / Thandi Lahar (Cold Wave & Frost)
+
+December-January mein Bihar mein kabhi kabhi pala padta hai — khaaskar raat mein jab aasman saaf ho.
+
+Konsi fasal sabse zyada prabhavit:
+Aalu — patte kale pad jaate hain, kaafi bada nuksan
+Sarson — phool jhad jaate hain
+Tamatar, Mirch — paudhe mar jaate hain
+Dhaan nursery (agar koi ho)
+
+Bachav ke tarike:
+Shaam ko sinchai karein — paani mein heat hoti hai jo zameen ko garam rakhti hai
+Plastic sheet ya puraani bori se podhe dhako
+Smoky fire jalao — thoda dur pe, dhuan fasal ke upar rahe
+Sulfur dust (300g/acre) spray karo — yeh ek trah ka protective layer banata hai
+
+Agaah: IMD ka mausam bulletin daily sunen. All India Radio pe subah 6:30 baje aur shaam 7:30 baje Bihar ke liye Agrimet Advisory aati hai.
+
+---
+
+## Ghani Kohra (Dense Fog)
+
+December-January mein Bihar mein 7-15 din tak dense fog rehti hai. Visibility 50-200 meter tak gir jaati hai.
+
+Fasal par asar:
+Gehun mein Yellow Rust aur Brown Rust ka khatra badhta hai
+Aalu mein Late Blight ka khatra maximum hota hai
+Photosynthesis kam hoti hai — paidawar thodi ghatti hai
+
+Kya karein:
+Fog ke dauran khet mein spray mat karo — dawa patte par chipkti nahi
+Fog hatne ke baad preventive fungicide spray karein:
+  - Aalu ke liye: Metalaxyl+Mancozeb (Ridomil MZ) 600g/acre
+  - Gehun ke liye: Propiconazole 25EC (200ml/acre)
+Khet mein waterlogging mat hone do — fog + waterlogging = blight ka perfect storm
+
+---
+
+## Bemosum Barish (Unseasonal Rain)
+
+October-November mein dhaan aur makka ki katai ke samay agar barish aa jaaye:
+
+Turant katai karo jaise bhi ho sake
+Combine ke baad dane khule mein mat chhoddo — tarpal se dhako
+Agar dane gile ho gaye to: 2-3 din dhoop mein sukhaao, zyada der mat karo nahi to aflatoxin banta hai (makka mein)
+Godown mein naami 14% se kam hone par hi rakho
+
+Rabi bowane ke samay (November mein) barish aaye to:
+Mitti mein zyada naami se bowanie gair zaroori hai — 2-3 din ruko
+Zameen jab jhadi ke chune layak ho tab boo do
+
+---
+
+## Mausam Jaankari Kaise Lein
+
+IMD (India Meteorological Department): mausam.imd.gov.in — district wise 5-day forecast
+Meghdoot App: Free download, farmers ke liye specially bana app. Hindi mein agrimet advisory milti hai. Bihar ke sabhi districts cover.
+Damini App: Lightning alerts — thunderstorm ke time bahut zaroori
+All India Radio: Subah 6:30 aur 7:30 baje Bihar agriculture advisory.
+Is Chatbot mein: Apna district batao — hum mausam aur fasal advisory denge.
+
+---
+
+## Spray ke liye Mausam Sambandhi Niyam
+
+Spray tab hi karo jab:
+Hawa ki raftaar 10-15 km/h se kam ho
+Barish aane ki sambhavana na ho (next 4-6 ghante)
+Temperature 25-35°C ke beech ho
+Relative humidity 50-80% ho
+
+Spray kabhi mat karo:
+Tez hawa mein (spray drift hoga — dusre khet mein jayega)
+Barish se theek pehle ya baad mein (dawa dhul jayegi)
+Teez dhoop mein dopahar (dawa ud jayegi, kisan ko bhi dhoop lagegi)
+Pala padne ki raat ko
+
+---

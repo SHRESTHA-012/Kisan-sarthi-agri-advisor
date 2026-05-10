@@ -1,19 +1,171 @@
-खाद फसलों की अच्छी वृद्धि और अधिक उपज के लिए बहुत महत्वपूर्ण होती है। सही समय और सही मात्रा में खाद देने से मिट्टी की उर्वरता बनी रहती है।
+# Topic: Fertilizer & Nutrient Management Advisory — Bihar Farmers
+# Language: Hinglish (Hindi + English)
+# Region: Bihar, India
+# Format: Each section separated by --- for RAG chunking
 
-फसलों के लिए मुख्य तीन पोषक तत्व होते हैं:
-नाइट्रोजन (N) पत्तियों और हरे भागों की वृद्धि बढ़ाता है।
-फॉस्फोरस (P) जड़ों को मजबूत करता है और पौधे की शुरुआती वृद्धि में मदद करता है।
-पोटाश (K) पौधों को मजबूत बनाता है और उन्हें रोगों व सूखे से बचाता है।
+---
 
-जैविक खाद जैसे गोबर की खाद, कम्पोस्ट और हरी खाद मिट्टी की संरचना सुधारते हैं और लंबे समय तक उपज बढ़ाने में मदद करते हैं।
+## Khad Prabandhan — Sahi Jankari
 
-रासायनिक खादों में यूरिया, डीएपी (डाय-अमोनियम फॉस्फेट) और पोटाश (एमओपी) का उपयोग किया जाता है।
+Khet mein sahi matra mein, sahi samay par, sahi tarike se khad dena — yahi achhi paidawar ka raaz hai. Zyada khad dene se paisa barbad hota hai, zameen kharab hoti hai aur fasal mein rog-keede zyada lagte hain. Kam khad se paidawar ghatti hai.
 
-खाद डालते समय ध्यान रखें:
-खाद हमेशा मिट्टी की जांच के आधार पर डालें।
-एक साथ अधिक मात्रा में खाद न डालें, बल्कि थोड़ा-थोड़ा करके (किस्तों में) डालें।
-खाद को मिट्टी में अच्छी तरह मिलाएं ताकि पौधों को पूरा लाभ मिले।
+Mitti jaanch (Soil Testing) karwaein pehle — phir uske hisaab se khad dein. Yeh sabse scientific aur sasta tarika hai.
 
-अधिक मात्रा में रासायनिक खाद का उपयोग करने से मिट्टी खराब हो सकती है और फसल को नुकसान हो सकता है।
+---
 
-इसलिए संतुलित और सही तरीके से खाद का उपयोग करना बहुत जरूरी है।
+## Teen Mukhya Poshak Tatva (NPK)
+
+Nitrogen (N) — Neel rang ka poshak:
+Kaam: Patte aur tanon ki badhwaar ke liye. Patte hare rehte hain.
+Kami ke lakshan: Neeche ke purane patte pehle peele padte hain, upar se neeche ki taraf aata hai.
+Source: Urea (46% N), DAP (18% N), Ammonium Sulphate (21% N)
+Dhyan: Zyada N se rog-keede badhte hain. Kharif mein dhaan-makka mein zyada zaroorat. Rabi mein gehun mein 3 baar split mein dein.
+
+Phosphorus (P) — Jadon ka poshak:
+Kaam: Jadein mazboot banata hai, jaldi pakwaaw, phool-phal badhata hai.
+Kami ke lakshan: Patte neele-laal rang ke ho jaate hain. Paudha chota rehta hai. Jadein kamzor.
+Source: DAP (46% P2O5), SSP (16% P2O5), NP fertilizers
+Dhyan: Zameen mein mix karein — surface par chhodne se faida nahi. Ek baar bowane par dena kaafi hota hai.
+
+Potassium (K) — Mazbooti ka poshak:
+Kaam: Rog se ladne ki kshamta, sukhe mein sahayata, dana bhari hota hai, quality achhi hoti hai.
+Kami ke lakshan: Patte ke kinare se bhure-jale hue lagte hain. Daane halke hote hain. Paudha kamzor.
+Source: MOP/KCl (60% K2O), SOP (50% K2O — sulphur bhi deta hai)
+Dhyan: Bihar mein potassium ki kami badhti ja rahi hai. Dhan aur sugarcane mein zaroori.
+
+---
+
+## Mukhya Upyog — Crop-wise Fertilizer Schedule
+
+Dhaan (Paddy):
+Bowane par: 25 kg DAP + 15 kg MOP + 5 kg Zinc Sulphate
+21 din baad: 25 kg Urea
+45 din baad: 20 kg Urea
+Total: 45 kg Urea + 25 kg DAP + 15 kg MOP per acre
+
+Gehun (Wheat):
+Bowane par: 50 kg DAP + 20 kg MOP
+Pehle paani par: 30 kg Urea
+Doosre paani par: 20 kg Urea
+Total: 50 kg Urea + 50 kg DAP + 20 kg MOP per acre
+
+Makka (Maize):
+Bowane par: 40 kg DAP + 20 kg MOP
+V4 stage: 30 kg Urea
+V8 stage: 30 kg Urea
+Total: 60 kg Urea + 40 kg DAP + 20 kg MOP per acre
+
+Sarson (Mustard):
+Bowane par: 25 kg DAP + 15 kg MOP + 8 kg Sulphur
+30 din baad: 25 kg Urea
+Total: 25 kg Urea + 25 kg DAP + 15 kg MOP per acre
+
+Aalu (Potato):
+Bowane par: 60 kg DAP + 60 kg MOP
+Earthing up par: 40 kg Urea
+
+---
+
+## Sukshma Poshak Tatva (Micronutrients) — Bihar ki Khas Zaroorat
+
+Bihar ki zameen mein micronutrient ki kami bahut common hai. Iski wajah se fasal ki badi quality aur quantity dono prabhavit hoti hai.
+
+Zinc (Jasta) ki Kami — Sabse Common:
+Bihar ke 60-70% khetons mein Zinc ki kami hai.
+Lakshan: Naye patte ke beech peeli-safed dhariyan (Khaira rog in paddy). Patta chota rehta hai. Paudha stunted.
+Ilaaj: Zinc Sulphate 21% (5 kg per acre) zameen mein bowane se pehle dein.
+Turant ilaaj (foliar): Zinc Sulphate 0.5% (5g per litre paani) spray karein.
+Dhyan: Har 2-3 saal mein Zinc dena chahiye.
+
+Boron (Boran) ki Kami:
+Phool gobi, sarson, sunflower, sugarcane mein zyada hoti hai.
+Lakshan: Gobi mein andar se kaala ya brown (Browning). Paudhon mein phool achhi tarah nahi lagte. Sarson mein pods nahi bantey.
+Ilaaj: Borax (11% B) 1 kg per acre bowane se pehle. Foliar: Boric acid 0.2% spray.
+
+Iron (Loha) ki Kami:
+Aloo, chawal mein. Alkaline ya waterlogged mitti mein zyada.
+Lakshan: Naye patte peele ho jaate hain lekin naasein (veins) hare rehti hain (interveinal chlorosis).
+Ilaaj: Ferrous Sulphate 0.5% spray (5g per litre) 2-3 baar karein. Zameen mein acidification karein (sulphur dale).
+
+Sulphur (Gandhak) ki Kami:
+Sarson, pyaaz, lahsun, dalo mein bahut zaroori.
+Lakshan: Naye patte peele. Sarson mein phool achhe nahi lagte.
+Ilaaj: SSP (Single Super Phosphate) use karein — isme P ke saath S bhi milta hai. Ya Ammonium Sulphate (21% S) use karein.
+
+---
+
+## Jaivik Khad (Organic Fertilizers) — Mitti ka Poshan
+
+Gobar Ki Khad (FYM — Farm Yard Manure):
+Sabse achha jaivik khad. 4-5 ton per acre saalik dene se mitti ki sehat bahut achhi rehti hai.
+NPK: 0.5% N, 0.25% P, 0.5% K — chemical se kam lekin long-term benefit zyada.
+Kaise: 2-3 mahine purana gala-sada gobar dein. Kaccha gobar rog-keede laata hai.
+
+Vermicompost (Kechua Khad):
+FYM se 3-4 guna zyada powerful. 2 ton per acre kaafi hai.
+Fayde: Mitti mein hawa-paani dharna badhata hai, useful microbes badhate hain.
+Bihar mein KVK aur ATMA se subsidized rate par milta hai.
+
+Jeevamrit:
+Desi cow ke gobar-mutra se ghar par banaya jaata hai. Jeevit microbes deta hai zameen ko.
+Kaise banayein: 10kg desi gaay ka gobar + 10L mutra + 1kg chana aata + 1kg gud + 1 mutthi mitti. 200L paani mein mila kar 7 din rakhein, roz hilaayein. Phir 200L per acre sinchai ke paani mein mila kar dein.
+Cost: Lagbhag free. Bahut effective.
+
+Neem Khali (Neem Cake):
+100-150 kg per acre zameen mein milao. Nematodes aur soil pests ko maarta hai. Nitrogen bhi deta hai.
+
+Green Manure (Hari Khad):
+Dhaincha ya Sunn Hemp ugaao aur 45-50 din mein jot do. Ek crop mein 80-90 kg N per hectare milta hai — almost ek bori urea ke barabar.
+
+---
+
+## Biofertilizers — Jeevanu Khad
+
+Rhizobium: Hari dal, arhar, masur, chana ke beej ko bowane se pehle lagao. Rhizobium N2 gas ko seedha nitrogen mein badalta hai. Isse 25-30 kg N per hectare ki bachat hoti hai.
+Kaise: 200g Rhizobium packet + thoda paani + chini mila kar paste banao. Beej par lagao aur chhaya mein sukhao. Usi roz boo do.
+
+PSB (Phosphate Solubilizing Bacteria): Zameen mein stuck phosphorus ko ghol deta hai aur paudhon ko uplabdh karata hai. 200g packet per acre, beej upchar ya zameen mein milao.
+
+Azotobacter: Dhaan, gehun, makka ke liye. N fix karta hai. 200g per acre.
+
+Note: Biofertilizers ko sun se bachao. Chemical fertilizer ke saath mix mat karo. Expiry date check karo.
+
+---
+
+## Mitti Jaanch (Soil Testing) — Kaise Karwaein
+
+Bihar mein free ya nominal rate par mitti jaanch hoti hai.
+
+Kahaan karwaein:
+- Block Agriculture Office (muft)
+- Krishi Vigyan Kendra (KVK)
+- Bihar Soil Testing Lab, Patna
+- ICAR-RCER, Patna
+
+Mitti kaise lein:
+Khet mein 8-10 jagahon se V-shape se 0-15cm gehra sample lein. Sab milao. 500g sample ek polythene mein bandh karein. Label lagao — naam, khet ki jagah, fasal ka naam.
+
+Report mein kya milega: pH, EC, OC (organic carbon), N, P, K, Zinc, Boron.
+
+Soil Health Card scheme ke tahat har kisan ko muft jaanch milti hai. Apne block office mein avedan karein.
+
+---
+
+## Urea ka Sahi Upyog — Paisa Bachao
+
+Urea sabse sasta N source hai (46% N) lekin bahut zyada waste hota hai agar galat tarike se dein.
+
+Do's:
+- Bhaari paani ya barish ke turant baad dein (zameen namdar ho)
+- Undi ya kharpatwar ke paas mat dein
+- Shaam ko dein — subah ki dhoop mein ammonia ud jaata hai
+- Split mein dein — ek baar mein sab mat dein
+
+Don'ts:
+- Khade paani mein mat daalein (NH3 loss hoga)
+- Teez dhoop mein mat daalein
+- Zyada mat dein — sirf ETL ke hisaab se
+
+Neem Coated Urea: Sarkari neem coated urea hi kharidein. Isme N dheere-dheere nikalta hai, 10-15% zyada N-use efficiency milti hai.
+
+---

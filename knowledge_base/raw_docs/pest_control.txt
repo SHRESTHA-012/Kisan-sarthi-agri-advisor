@@ -1,32 +1,144 @@
-Topic: Pest Control
+# Topic: Pest Control Advisory — Bihar Farmers
+# Language: Hinglish (Hindi + English)
+# Region: Bihar, India
+# Format: Each section separated by --- for RAG chunking
 
-Common Pests:
-- Aphids
-- Whiteflies
-- Caterpillars
-- Stem borers
+---
 
-Signs of Pest Attack:
-- Yellowing leaves
-- Holes in leaves
-- Sticky substance on plants
+## Keede Prabandhan — Samajhne ki Baat
 
-Organic Control:
-- Neem oil spray
-- Garlic and chili spray
-- Use natural predators
+Khet mein har keeda nuksandeh nahi hota. Bahut se keede faydemand hote hain — jaise ladybird beetle, spider, ground beetle — jo hamare dushman keedon ko khate hain. Isliye hamesha pehle khet mein jaake dekho, ginoo, phir faisla karo ki spray karna hai ya nahi.
 
-Chemical Control:
-- Use pesticides only if necessary
-- Follow recommended dosage
-- Do not overuse chemicals
+IPM yaani Integrated Pest Management apnaein. Iska matlab hai — pehle cultural tarike, phir biological, aur chemical spray sirf tab jab bahut zaroorat ho. Isse kharcha bachta hai, fasal ki quality achhi rehti hai aur zameen ka swasthya theek rehta hai.
 
-Preventive Measures:
-- Regular field inspection
-- Crop rotation
-- Clean field after harvest
+---
 
-Advice:
-- Spray in early morning or evening
-- Wear protection while spraying
-- Avoid spraying during rain
+## Economic Threshold Level (ETL) — Kab Spray Karein
+
+Spray tab hi karein jab keede ETL se zyada ho jaayein:
+
+Dhaan mein Bhura Mahu (BPH): 10 keede per hill
+Dhaan mein Patta Lapettak: 1 lapeta patta per tiller
+Dhaan mein Tana Chedak: 5% Dead Heart ya 2% White Ear
+Gehun mein Mahu: 10 aphid per shoot
+Makka mein FAW: 5-10% paudhe affected
+Sarson mein Mahu: 20-25 keede per paudha
+Tamatar mein Fruit Borer: 5% phal kharaab
+
+Pehle gino, phir spray karo. Andhe spray se paisa barbad hota hai aur faydemand keede bhi mar jaate hain.
+
+---
+
+## Dhaan ke Pramukh Keede aur Ilaaj
+
+Bhura Mahu (Brown Plant Hopper):
+Pehchaan: 2-4mm ke bhoore keede paudhon ki jadh ke paas dikhte hain. Khet mein gol-gol sukhne ke nishaan dikhte hain jise Hopperburn kehte hain. Chandni raat mein paudhon ko hilao — keede neeche girenge.
+Karan: Zyada Urea dene se, ghani ropai se aur zyada barish se BPH badhta hai.
+Ilaaj: Imidacloprid 17.8SL (125ml/acre) paudhon ki jadh ke paas spray karein. Buprofezin 25SC (400ml/acre) bhi effective hai. Zyada paani nikaalo aur khet ko 2-3 din sukha rehne do.
+
+Patta Lapettak (Leaf Folder):
+Pehchaan: Patta nali ki tarah lapeta milega, andar caterpillar hoga. Patte par safed lakeerein dikhti hain.
+Ilaaj: Lambda-cyhalothrin 5EC (200ml/acre) spray karein. Chlorpyrifos 20EC (500ml/acre) bhi use kar sakte hain.
+
+Tana Chedak (Stem Borer):
+Pehchaan: Vegetative stage mein Dead Heart (beech ki patti sukhti hai, baakhi patte hare) aur reproductive stage mein White Ear (poori baal safed aur khaali).
+Ilaaj: Fipronil 0.3G granules (8kg/acre) paani mein daalein ya Cartap hydrochloride 50SP (400g/acre) spray karein. Trichogramma japonicum cards (1.5 lakh/acre) biological control ke liye lagaein.
+
+---
+
+## Gehun ke Pramukh Keede
+
+Mahu (Aphid):
+Pehchaan: Chote hare ya kaale keede shoots aur patto par cluster mein dikhte hain. Chipchipa honeydew chhodte hain. December-January mein fog ke baad sabse zyada hote hain.
+Ilaaj: Dimethoate 30EC (300ml/acre) ya Imidacloprid 17.8SL (75ml/acre). Agar ladybird beetles dikhein to spray mat karo — woh khud hi kha lenge.
+
+Termite (Deemak):
+Pehchaan: Paudhe zameen ki seedh se murjha jaate hain. Jadon aur tane andar se khokhe ho jaate hain. Mitti ki suranghein dikhti hain.
+Ilaaj: Chlorpyrifos 20EC (2L/acre, 400L paani mein) zameen mein daalein. Beej upchar: Imidacloprid 70WS (5ml/kg beej).
+
+---
+
+## Makka ke Pramukh Keede
+
+Fall Armyworm (FAW):
+Bihar mein naya aur bahut khatarnak keeda. Ek raat mein poora khet kharaab kar sakta hai.
+Pehchaan: Caterpillar ke sar par ulta 'Y' ka nishaan. Whorl mein chhota ched aur frass (mala) dikhta hai. Patte gol-gol kate hue lagte hain.
+Monitoring: Pheromone trap lagaein — ek trap per 2 acre. Har hafte ginein.
+Ilaaj:
+- Subah mein whorl mein baalu (sand) ya raakh daalna — turant aur free ilaaj
+- Bacillus thuringiensis (Bt) spray — jaivik upay
+- Emamectin benzoate 5SG (80g/acre) whorl mein spray — sabse effective chemical
+
+Maize Borer:
+Tane ke andar caterpillar. Bore hole aur frass dikhte hain.
+Ilaaj: Carbofuran 3G granules (10kg/acre) whorl mein daalo.
+
+---
+
+## Sarson ke Pramukh Keede
+
+Sarson Mahu (Mustard Aphid):
+Bihar ki rabi season ki sabse badi samasya. December-February mein peak hoti hai.
+Pehchaan: Peele-hare aphids ki bhaari colony terminal shoots, flower buds aur pods par. Paudha murjha jaata hai, chipchipa dikhta hai.
+ETL: 20-25 keede per paudha.
+Ilaaj: Oxydemeton methyl 25EC (250ml/acre) spray karein. Subah mein spray karo jab keede active hote hain. Agar ladybird beetles dikhein to ruko — woh natural control karenge.
+
+---
+
+## Sabziyon ke Pramukh Keede
+
+Tomato Fruit Borer (Helicoverpa armigera):
+Bihar mein tamatar ki sabse badi samasya. Caterpillar aadhe andar ghuskar phal khata hai.
+Ilaaj: Pheromone trap (1/acre). Spinosad 45SC (75ml/acre) ya Indoxacarb 14.5SC (200ml/acre). Biological: NPV spray (250 LE/acre).
+
+Shoot & Fruit Borer (Baigan):
+Nayi shoot andar se khaali milti hai aur phal kharab hote hain.
+Ilaaj: Kharab shoots kaat ke jalaein. Spinosad spray. Neem oil 3% spray preventive taur par karein.
+
+Thrips:
+Bht chote keede, patte pale aur mude hue. Pyaaz aur mirch mein zyada.
+Ilaaj: Fipronil 5SC (400ml/acre) ya Thiamethoxam 25WG (40g/acre).
+
+---
+
+## Biological Pest Control — Prakritik Tarike
+
+Trichogramma Cards: Parasitic wasp ke ande hote hain jo stem borer aur leaf folder ke ande kharab kar dete hain. 1-1.5 lakh ande per acre, weekly 8-10 hafte. Bihar Agriculture Department isse subsidy par deta hai.
+
+Bacillus thuringiensis (Bt): Jaivik keetnashak. FAW, caterpillars par effective. Paani mein milakar spray karo. Manukhon aur pashuon ke liye bilkul safe.
+
+Neem Products: Neem oil (3ml + 1ml soap per litre) ya Azadirachtin 1500ppm (1L/acre). Sucking keede aur young caterpillars par effective. Roz spray mat karo — 7-10 din ka antar rakho.
+
+---
+
+## Spray Karte Waqt Zaroori Savdhaniyaan
+
+- Subah ya shaam ko spray karein — teez dhoop mein spray waste hota hai
+- Hawa ki seedh mein spray mat karein
+- Full PPE pehnein: gloves, mask, eye protection
+- Spray ke baad haath-munh zaroor dhoyein
+- Khane-peene ki cheez spray se door rakhein
+- Dawa ki bottle ka label zaroor padhein
+- Waiting Period zaroor follow karein — jitne din likha hai utne din baad hi fasal kato
+
+---
+
+## Keetnashak Resistance se Bachein
+
+Ek hi keetnashak baar-baar use karne se keede uspe resistant ho jaate hain. Rotation apnaein:
+
+Spray 1: Organophosphate (Chlorpyrifos, Dimethoate)
+Spray 2: Pyrethroid (Lambda-cyhalothrin)
+Spray 3: Neonicotinoid (Imidacloprid, Thiamethoxam)
+
+Har spray mein alag group ka chemical use karo. Is tarah resistance nahi badhega.
+
+---
+
+## Sarkari Sahayata
+
+Bihar mein Trichogramma cards aur Bt spray subsidized rate par milte hain. Apne Block Agriculture Officer se sampark karein ya Krishi Vigyan Kendra (KVK) mein jaein.
+
+Pest ki photo WhatsApp ya is chatbot mein bhejo — hum identify karke sahi ilaaj batayenge.
+
+---
