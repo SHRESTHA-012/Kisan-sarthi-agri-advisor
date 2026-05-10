@@ -1,6 +1,6 @@
+import os
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-import os
 
 DB_PATH = "faiss_index"
 
@@ -44,6 +44,22 @@ def get_db():
     return db
 
 
+# 🔥 NEW: Crop detection logic
+def detect_crop(query):
+    q = query.lower()
+
+    if any(word in q for word in ["धान", "dhaan", "rice"]):
+        return "rice"
+    elif any(word in q for word in ["गेहूं", "gehu", "wheat"]):
+        return "wheat"
+    elif any(word in q for word in ["मक्का", "makka", "maize"]):
+        return "maize"
+    elif any(word in q for word in ["सब्ज", "vegetable", "sabzi"]):
+        return "vegetables"
+    
+    return None
+
+
 def retrieve_context(query, k=3):
     try:
         database = get_db()
@@ -57,18 +73,42 @@ def retrieve_context(query, k=3):
         query = query.strip()
         print(f"\n🔍 Query: {query}")
 
+        # 🔍 Detect crop
+        crop = detect_crop(query)
+        print("🌾 Detected crop:", crop)
+
+        # 🔥 Step 1: Retrieve more docs
         try:
-            docs = database.similarity_search(query, k=k)
+            docs = database.similarity_search(query, k=8)
         except Exception as e:
             print("❌ FAISS search failed:", repr(e))
-            return "Retrieval system error (check embedding/index mismatch)."
+            return "Retrieval system error."
 
         if not docs:
             return "No relevant agricultural information found."
 
-        print(f"📄 Retrieved {len(docs)} documents")
+        print(f"📄 Retrieved {len(docs)} documents (before filtering)")
 
-        context = "\n\n".join([doc.page_content for doc in docs])
+        # 🔥 Step 2: Filter based on crop
+        if crop:
+            filtered_docs = [
+                doc for doc in docs
+                if crop in doc.page_content.lower()
+            ]
+
+            # fallback if nothing matches
+            if len(filtered_docs) == 0:
+                print("⚠️ No crop-specific match, using original docs")
+                filtered_docs = docs
+        else:
+            filtered_docs = docs
+
+        # 🔥 Step 3: Take top-k after filtering
+        final_docs = filtered_docs[:k]
+
+        print(f"📄 Final selected documents: {len(final_docs)}")
+
+        context = "\n\n".join([doc.page_content for doc in final_docs])
 
         print("\n📚 Context Preview:")
         print(context[:300])
