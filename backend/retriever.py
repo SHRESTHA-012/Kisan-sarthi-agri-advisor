@@ -44,7 +44,7 @@ def get_db():
     return db
 
 
-# 🔥 NEW: Crop detection logic
+#  NEW: Crop detection logic
 def detect_crop(query):
     q = query.lower()
 
