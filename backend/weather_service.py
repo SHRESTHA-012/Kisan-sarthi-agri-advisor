@@ -2,8 +2,7 @@ import requests
 import json
 import os
 
-# ── Config ─────────────────────────────────────────────────────────────────────
-# Put your key in .env or config.py — never hardcode in production
+
 OWM_API_KEY = os.getenv("OPENWEATHER_API_KEY", "YOUR_API_KEY_HERE")
 OWM_URL     = "https://api.openweathermap.org/data/2.5/weather"
 
@@ -102,7 +101,7 @@ def get_weather(district: str) -> dict:
         data = resp.json()
 
         if resp.status_code != 200:
-            print(f"⚠️ OWM API error: {data.get('message')}")
+            print(f" OWM API error: {data.get('message')}")
             return _mock_weather(district)
 
         temp        = round(data["main"]["temp"], 1)
@@ -122,10 +121,10 @@ def get_weather(district: str) -> dict:
         }
 
     except requests.exceptions.Timeout:
-        print("⚠️ Weather API timeout")
+        print(" Weather API timeout")
         return _mock_weather(district)
     except Exception as e:
-        print(f"⚠️ Weather error: {e}")
+        print(f" Weather error: {e}")
         return _mock_weather(district)
 
 
