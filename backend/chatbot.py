@@ -2,6 +2,7 @@ import ollama
 from backend.retriever import retrieve_context
 from backend.crop_engine import get_crops
 from backend.weather_service import get_weather
+from backend.pest_detection import analyze_pest
 import re
 from datetime import datetime
 
@@ -11,23 +12,19 @@ def is_hindi(text):
 
 
 def get_current_season() -> str:
-    """Automatically detect Bihar farming season from current month."""
     month = datetime.now().month
     if month in [6, 7, 8, 9]:
-        return "Kharif"      # Paddy, Maize, Soybean
+        return "Kharif"
     elif month in [10, 11, 12, 1, 2, 3]:
-        return "Rabi"        # Wheat, Mustard, Potato
+        return "Rabi"
     else:
-        return "Zaid"        # Vegetables, Watermelon
+        return "Zaid"
 
 
 def build_chat_history(chat_history: list, use_hindi: bool) -> list:
-    """Convert app.py session messages to ollama message format."""
     if not chat_history:
         return []
-
     messages = []
-    # Only send last 4 exchanges (8 messages) to stay within context window
     recent = chat_history[-8:]
     for msg in recent:
         role = msg.get("role", "user")
@@ -37,24 +34,54 @@ def build_chat_history(chat_history: list, use_hindi: bool) -> list:
     return messages
 
 
-def generate_response(user_query: str, district: str = "Patna", chat_history: list = None, session: dict = None) -> str:
-    """
-    Generate a farming advisory response.
+# ── Pest-related keyword detection 
+_PEST_TRIGGER_KEYWORDS = [
+    # Hindi
+    "कीट", "रोग", "बीमारी", "कीड़ा", "कीड़े", "माहू", "दीमक",
+    "छेदक", "लपेटक", "आर्मीवर्म", "इल्ली", "सुंडी", "फंगस",
+    "फफूंद", "पीला", "सूखना", "मुरझाना", "धब्बा", "छेद",
+    # English / Hinglish
+    "pest", "disease", "insect", "borer", "hopper", "aphid",
+    "termite", "fungus", "yellowing", "wilting", "rot", "damage",
+    "spray", "dawai", "dawa", "keeda", "rog", "bimari"
+]
 
-    Accepts both:
-    - New style: generate_response(query, district="Patna", chat_history=[...])  ← from app.py
-    - Old style: generate_response(query, session={"district": "Patna"})         ← legacy
-    """
+def _is_pest_query(query: str) -> bool:
+    """Check if query is about pest or disease."""
+    query_lower = query.lower()
+    return any(kw in query_lower for kw in _PEST_TRIGGER_KEYWORDS)
 
-    # ── Resolve district ───────────────────────────────────────────────────────
+
+def generate_response(
+    user_query: str,
+    district: str = "Patna",
+    chat_history: list = None,
+    session: dict = None,
+    image_path: str = None       # ← for future image upload support
+) -> str:
+
+    # ── Resolve district 
     if session and "district" in session:
         district = session["district"]
 
-    # ── Season (auto-detected) ─────────────────────────────────────────────────
-    season = get_current_season()
-
-    # ── Language detection ─────────────────────────────────────────────────────
+    season   = get_current_season()
     use_hindi = is_hindi(user_query)
+
+    # ── PEST DETECTION (runs before LLM — faster + more accurate)
+    if _is_pest_query(user_query) or image_path:
+        pest_result = analyze_pest(query=user_query, image_path=image_path)
+        if pest_result:
+            # Add a closing line with weather context if relevant
+            weather = get_weather(district)
+            if weather["humidity"] > 80:
+                pest_result += (
+                    f"\n\n🌦️ *मौसम सतर्कता:* आज नमी {weather['humidity']}% है — "
+                    f"कीट/रोग फैलने का खतरा अधिक है। तुरंत उपचार करें।"
+                    if use_hindi else
+                    f"\n\n🌦️ Aaj nami {weather['humidity']}% hai — "
+                    f"keeton ka khatra zyada hai. Turant upchar karein."
+                )
+            return pest_result
 
     # ── Dynamic data ───────────────────────────────────────────────────────────
     crops   = get_crops(district, season)
@@ -75,7 +102,7 @@ def generate_response(user_query: str, district: str = "Patna", chat_history: li
             "Koi additional jaankari uplabdh nahi hai."
         )
 
-    # ── Build context block ────────────────────────────────────────────────────
+    # ── Context block ──────────────────────────────────────────────────────────
     if use_hindi:
         context = f"""जिला: {district} | मौसम: {season}
 मौसम की स्थिति: {weather_str}
@@ -108,7 +135,7 @@ Jaankari:
         system_prompt = """Aap Bihar ke kisanon ke liye ek anubhavshali krishi salahakar hain.
 
 Niyam:
-- Hamesha Roman Hindi (English letters mein Hindi) use karein
+- Hamesha Roman Hindi use karein
 - "Kisan bhai" se shuru karein
 - 3-4 chhote vakya likhein
 - Practical salah dein (kab, kaise, kitna)
@@ -131,7 +158,7 @@ Kisan ka prashn: {user_query}
 
 Nirdesh: Roman Hindi me simple aur practical jawab dein."""
 
-    # ── Build messages with history ────────────────────────────────────────────
+    # ── Chat history ───────────────────────────────────────────────────────────
     history_messages = build_chat_history(chat_history or [], use_hindi)
 
     messages = (
