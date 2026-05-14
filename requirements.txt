@@ -16,3 +16,6 @@ torch
 pypdf
 
 ollama
+
+deep_translator
+langdetect
