@@ -1,13 +1,9 @@
-
 import logging
 from typing import Optional
 
 from .session_manager import session_manager, State
 
 logger = logging.getLogger(__name__)
-
-
-# ── Command map ────────────────────────────────────────────────────────────────
 
 COMMANDS = {
     "/start":   "handle_start",
@@ -20,59 +16,40 @@ COMMANDS = {
     "/lang":    "handle_lang_command",
 }
 
-# ── Main router ────────────────────────────────────────────────────────────────
 
 async def route_message(
     user_id: int,
     username: Optional[str],
-    message_type: str,          # "text" | "voice" | "photo" | "document"
-    content,                    # str for text, bytes for voice/photo
+    message_type: str,
+    content,
     caption: Optional[str] = None,
 ) -> str:
-    """
-    Central routing function.
-    Returns the reply string to send back to the farmer.
-    """
-
     session = session_manager.get(user_id)
     if username:
         session.username = username
 
     try:
-        # ── 1. Photo / pest image ────────────────────────────────────────────
         if message_type == "photo":
             return await _handle_photo(session, content, caption)
-
-        # ── 2. Voice message ─────────────────────────────────────────────────
         if message_type == "voice":
             return await _handle_voice(session, content)
-
-        # ── 3. Text message ──────────────────────────────────────────────────
         if message_type == "text":
             text: str = content.strip()
-
-            # Commands take priority
-            command = text.split()[0].lower() if text.startswith("/") else None
+            command   = text.split()[0].lower() if text.startswith("/") else None
             if command and command in COMMANDS:
                 return await _dispatch_command(command, text, session)
-
-            # State-based routing
             return await _handle_text_by_state(session, text)
-
     except Exception as exc:
         logger.exception("Error routing message from user %s: %s", user_id, exc)
         return _err_reply(session.language)
-
     finally:
         session_manager.update(session)
 
     return _err_reply(session.language)
 
 
-# ── Command handlers ───────────────────────────────────────────────────────────
-
 async def _dispatch_command(command: str, full_text: str, session) -> str:
-    args = full_text.split()[1:]  # words after the command
+    args = full_text.split()[1:]
 
     if command == "/start":
         session.reset()
@@ -162,41 +139,24 @@ async def _dispatch_command(command: str, full_text: str, session) -> str:
     return _err_reply(session.language)
 
 
-# ── State-based text routing ───────────────────────────────────────────────────
-
 async def _handle_text_by_state(session, text: str) -> str:
-    state = session.state
-
-    if state == State.AWAITING_CROP:
+    if session.state == State.AWAITING_CROP:
         session.current_crop = text
         next_action = session.context.get("next_action", "advisory")
         session.reset()
-        session.current_crop = text  # keep crop after reset
-
+        session.current_crop = text
         if next_action == "price":
             return await _fetch_price(text, session)
         return await _fetch_advisory(text, session)
-
-    # Default: free-form RAG chatbot
     return await _rag_chat(text, session)
 
 
-# ── Media handlers ─────────────────────────────────────────────────────────────
-
 async def _handle_photo(session, photo_bytes: bytes, caption: Optional[str]) -> str:
     try:
-        from backend.pest_detection import detect_pest
-        result = await detect_pest(photo_bytes)
-        name     = result.get("pest_name", "अज्ञात")
-        severity = result.get("severity", "-")
-        remedy   = result.get("remedy", "")
-        return (
-            f"🔍 *पहचाना गया:* {name}\n"
-            f"⚠️ *गंभीरता:* {severity}\n\n"
-            f"💊 *उपाय:*\n{remedy}"
-        )
-    except ImportError:
-        logger.warning("pest_detection backend not available")
+        from src.core.pest_detection import analyze_pest
+        result = analyze_pest(query=caption, image_path=None)
+        if result:
+            return result
         return "📸 फोटो मिली। कीट पहचान सेवा जल्द उपलब्ध होगी।"
     except Exception as exc:
         logger.error("Pest detection error: %s", exc)
@@ -205,61 +165,45 @@ async def _handle_photo(session, photo_bytes: bytes, caption: Optional[str]) -> 
 
 async def _handle_voice(session, audio_bytes: bytes) -> str:
     try:
-        from backend.voice_service import transcribe
+        from src.core.voice_service import transcribe
         text = await transcribe(audio_bytes, lang=session.language)
-        logger.info("Voice transcribed: %s", text)
-        # Route the transcribed text normally
         return await _handle_text_by_state(session, text)
     except ImportError:
-        logger.warning("voice_service backend not available")
         return "🎤 आवाज़ संदेश मिला। कृपया टेक्स्ट में भी लिखें।"
     except Exception as exc:
         logger.error("Voice error: %s", exc)
         return _err_reply(session.language)
 
 
-# ── Backend calls ──────────────────────────────────────────────────────────────
-
 async def _rag_chat(text: str, session) -> str:
-    try:
-        from backend.chatbot import generate_response
-        # Matches your existing generate_response(query, district, chat_history) signature
-        return generate_response(
-            text,
-            district=session.district,
-            chat_history=session.context.get("chat_history", []),
-        )
-    except ImportError:
-        return "🤖 " + text  # Echo fallback during development
+    from src.core.chatbot import generate_response
+    return generate_response(
+        text,
+        district=session.district,
+        chat_history=session.context.get("chat_history", []),
+    )
 
 
 async def _fetch_advisory(crop: str, session) -> str:
-    try:
-        from backend.advisory_engine import get_crop_advisory
-        return get_crop_advisory(crop=crop, district=session.district)
-    except ImportError:
-        return f"🌱 *{crop}* की सलाह जल्द उपलब्ध होगी।"
+    from src.core.advisory_engine import handle_crop
+    return handle_crop(crop, session.district or "Patna")
 
 
 async def _fetch_weather(district: str, session) -> str:
-    try:
-        from backend.weather_service import get_weather
-        # Matches your existing get_weather(district) → dict signature
-        w = get_weather(district)
-        return (
-            f"🌤️ *{district} मौसम*\n"
-            f"🌡️ तापमान: {w['temp']}°C\n"
-            f"💧 नमी: {w['humidity']}%\n"
-            f"☁️ {w['description']}\n\n"
-            f"📢 {w['advisory']}"
-        )
-    except ImportError:
-        return f"🌤️ {district} का मौसम डेटा जल्द उपलब्ध होगा।"
+    from src.core.weather_service import get_weather
+    w = get_weather(district)
+    return (
+        f"🌤️ *{district} मौसम*\n"
+        f"🌡️ तापमान: {w['temp']}°C\n"
+        f"💧 नमी: {w['humidity']}%\n"
+        f"☁️ {w['description']}\n\n"
+        f"📢 {w['advisory']}"
+    )
 
 
 async def _fetch_price(crop: str, session) -> str:
+    import json, os
     try:
-        import json, os
         path = os.path.join("data", "msp_prices.json")
         with open(path) as f:
             prices = json.load(f)
@@ -272,8 +216,8 @@ async def _fetch_price(crop: str, session) -> str:
 
 
 async def _fetch_schemes(session) -> str:
+    import json, os
     try:
-        import json, os
         path = os.path.join("data", "govt_schemes.json")
         with open(path) as f:
             schemes = json.load(f)
@@ -284,8 +228,6 @@ async def _fetch_schemes(session) -> str:
     except Exception:
         return "📋 योजना जानकारी जल्द उपलब्ध होगी।"
 
-
-# ── Helpers ────────────────────────────────────────────────────────────────────
 
 def _localize(lang: str, strings: dict) -> str:
     return strings.get(lang, strings.get("hi", list(strings.values())[0]))
