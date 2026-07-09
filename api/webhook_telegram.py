@@ -1,4 +1,3 @@
-
 import os
 import logging
 import httpx
@@ -17,6 +16,9 @@ router = APIRouter(prefix="/webhook", tags=["Telegram"])
 BOT_TOKEN    = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
 WEBHOOK_SECRET = os.getenv("TELEGRAM_WEBHOOK_SECRET", "")  # Optional extra security
+
+_processed_update_ids = set()
+_MAX_TRACKED_IDS = 1000
 
 
 # ── Webhook endpoint ───────────────────────────────────────────────────────────
@@ -89,6 +91,15 @@ async def _process_update(update: dict):
     Parse the Telegram Update object and call route_message.
     Handles: text, photo, voice messages.
     """
+    update_id = update.get("update_id")
+    if update_id is not None:
+        if update_id in _processed_update_ids:
+            logger.info("Duplicate update_id %s — skipping", update_id)
+            return
+        _processed_update_ids.add(update_id)
+        if len(_processed_update_ids) > _MAX_TRACKED_IDS:
+            _processed_update_ids.clear()
+
     try:
         message = update.get("message") or update.get("edited_message")
         if not message:
@@ -138,7 +149,16 @@ async def _process_update(update: dict):
             await _send_message(chat_id, reply)
 
     except Exception as exc:
-        logger.exception("Failed to process Telegram update: %s", exc)
+        logger.exception("PROCESS_UPDATE EXCEPTION: %s", exc)
+        import traceback
+        traceback.print_exc()
+
+        try:
+          chat_id = update.get("message", {}).get("chat", {}).get("id")
+          if chat_id:
+            await _send_message(chat_id, "⚠️ Kuch gadbad hui, thodi der me try karein.")
+        except Exception:
+           pass
 
 
 # ── Telegram API helpers ───────────────────────────────────────────────────────

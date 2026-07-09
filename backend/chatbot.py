@@ -1,4 +1,7 @@
-import ollama
+import os
+from groq import Groq
+
+
 from backend.retriever import retrieve_context
 from backend.crop_engine import get_crops
 from backend.weather_service import get_weather
@@ -6,6 +9,7 @@ from backend.pest_detection import analyze_pest
 import re
 from datetime import datetime
 
+groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 def is_hindi(text):
     return bool(re.search(r'[\u0900-\u097F]', text))
@@ -94,13 +98,18 @@ def generate_response(
     )
 
     # ── RAG context ────────────────────────────────────────────────────────────
-    retrieved_context = retrieve_context(user_query)
-    if not retrieved_context.strip():
-        retrieved_context = (
-            "कोई अतिरिक्त जानकारी उपलब्ध नहीं है।"
-            if use_hindi else
-            "Koi additional jaankari uplabdh nahi hai."
-        )
+    GREETING_WORDS = {"hi", "hello", "hey", "namaste", "hii", "hlo", "yo"}
+
+    if user_query.strip().lower() in GREETING_WORDS:
+        retrieved_context = ""
+    else:
+        retrieved_context = retrieve_context(user_query)
+        if not retrieved_context.strip():
+            retrieved_context = (
+                "कोई अतिरिक्त जानकारी उपलब्ध नहीं है।"
+                if use_hindi else
+                "Koi additional jaankari uplabdh nahi hai."
+            )
 
     # ── Context block ──────────────────────────────────────────────────────────
     if use_hindi:
@@ -167,18 +176,16 @@ Nirdesh: Roman Hindi me simple aur practical jawab dein."""
         + [{"role": "user", "content": user_prompt}]
     )
 
-    # ── LLM call ───────────────────────────────────────────────────────────────
+   # ── LLM call ───────────────────────────────────────────────────────────────
     try:
-        response = ollama.chat(
-            model="mistral",
-            options={
-                "num_ctx": 2048,
-                "temperature": 0.4,
-                "top_p": 0.9
-            },
+        response = groq_client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            temperature=0.4,
+            top_p=0.9,
+            max_tokens=512,
             messages=messages
         )
-        return response["message"]["content"]
+        return response.choices[0].message.content
 
     except Exception as e:
         print(f"LLM error: {e}")
