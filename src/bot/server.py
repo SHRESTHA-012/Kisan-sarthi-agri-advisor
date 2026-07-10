@@ -1,4 +1,7 @@
-
+"""
+Telegram bot server — FastAPI app + lifespan.
+Entry point: main_bot.py at project root.
+"""
 import logging
 import asyncio
 import os
@@ -6,14 +9,12 @@ from contextlib import asynccontextmanager
 
 import httpx
 from fastapi import FastAPI
-import uvicorn
 from dotenv import load_dotenv
 
 load_dotenv()
 
-from api import telegram_router, session_manager
+from src.api import telegram_router, session_manager
 
-# ── Logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)-8s | %(name)s — %(message)s",
@@ -22,16 +23,12 @@ logging.basicConfig(
 logger = logging.getLogger("agriadvisor.telegram")
 
 
-# ── Auto-register webhook ──────────────────────────────────────────────────────
+# ── Webhook auto-registration ──────────────────────────────────────────────────
 
 async def _get_ngrok_url() -> str | None:
-    """
-    Ask ngrok's local API for the current public HTTPS tunnel URL.
-    ngrok exposes this at http://localhost:4040/api/tunnels while running.
-    """
     try:
         async with httpx.AsyncClient(timeout=5) as client:
-            resp = await client.get("http://localhost:4040/api/tunnels")
+            resp    = await client.get("http://localhost:4040/api/tunnels")
             tunnels = resp.json().get("tunnels", [])
             for tunnel in tunnels:
                 url = tunnel.get("public_url", "")
@@ -43,10 +40,9 @@ async def _get_ngrok_url() -> str | None:
 
 
 async def _register_webhook(public_url: str) -> bool:
-    """Register the webhook URL with Telegram."""
-    token = os.getenv("TELEGRAM_BOT_TOKEN", "")
+    token       = os.getenv("TELEGRAM_BOT_TOKEN", "")
     webhook_url = f"{public_url}/webhook/telegram"
-    secret = os.getenv("TELEGRAM_WEBHOOK_SECRET", "")
+    secret      = os.getenv("TELEGRAM_WEBHOOK_SECRET", "")
 
     payload = {
         "url": webhook_url,
@@ -66,19 +62,14 @@ async def _register_webhook(public_url: str) -> bool:
         if result.get("ok"):
             logger.info("✅ Webhook registered: %s", webhook_url)
             return True
-        else:
-            logger.error("❌ Webhook registration failed: %s", result)
-            return False
+        logger.error("❌ Webhook registration failed: %s", result)
+        return False
     except Exception as e:
         logger.error("❌ Webhook registration error: %s", e)
         return False
 
 
 async def _auto_register_webhook():
-    """
-    Try to detect ngrok and auto-register webhook.
-    Retries a few times in case ngrok hasn't fully started yet.
-    """
     for attempt in range(1, 4):
         logger.info("🔍 Looking for ngrok tunnel (attempt %d/3)…", attempt)
         url = await _get_ngrok_url()
@@ -86,7 +77,7 @@ async def _auto_register_webhook():
             logger.info("🌐 ngrok tunnel found: %s", url)
             await _register_webhook(url)
             return
-        await asyncio.sleep(3)  # wait and retry
+        await asyncio.sleep(3)
 
     logger.warning(
         "⚠️  ngrok tunnel not found. Register webhook manually:\n"
@@ -104,7 +95,6 @@ async def lifespan(app: FastAPI):
     if not os.getenv("TELEGRAM_BOT_TOKEN"):
         logger.warning("⚠️  TELEGRAM_BOT_TOKEN is not set in .env!")
 
-    # Auto-register webhook if ngrok is running
     asyncio.create_task(_auto_register_webhook())
 
     async def _cleanup():
@@ -120,10 +110,10 @@ async def lifespan(app: FastAPI):
     logger.info("Telegram Bot shut down.")
 
 
-# ── App
+# ── App ────────────────────────────────────────────────────────────────────────
 
 bot = FastAPI(
-    title="AgrAdvisor Bihar — Telegram Bot",
+    title="AgriAdvisor Bihar — Telegram Bot",
     version="1.0.0",
     lifespan=lifespan,
 )
@@ -133,24 +123,13 @@ bot.include_router(telegram_router)
 
 @bot.get("/")
 def root():
-    return {"service": "AgrAdvisor Telegram Bot", "status": "running"}
+    return {"service": "AgriAdvisor Telegram Bot", "status": "running"}
 
 
 @bot.get("/health")
 def health():
     return {
-        "status": "ok",
-        "sessions": session_manager.stats()["active_sessions"],
+        "status":    "ok",
+        "sessions":  session_manager.stats()["active_sessions"],
         "token_set": bool(os.getenv("TELEGRAM_BOT_TOKEN")),
     }
-
-
-# ── Run 
-
-if __name__ == "__main__":
-    uvicorn.run(
-        "telegram_bot:bot",
-        host="0.0.0.0",
-        port=int(os.getenv("TELEGRAM_PORT", 8000)),
-        reload=True,
-    )

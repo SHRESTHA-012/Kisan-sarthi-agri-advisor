@@ -1,14 +1,14 @@
 import os
 import requests
-from utils.config import TELEGRAM_BOT_TOKEN
-from utils.logger import get_logger
+from src.utils.config import TELEGRAM_BOT_TOKEN
+from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
 TEMP_DIR = "temp_media"
 os.makedirs(TEMP_DIR, exist_ok=True)
 
-TELEGRAM_FILE_URL = "https://api.telegram.org/bot{token}/getFile?file_id={file_id}"
+TELEGRAM_FILE_URL     = "https://api.telegram.org/bot{token}/getFile?file_id={file_id}"
 TELEGRAM_DOWNLOAD_URL = "https://api.telegram.org/file/bot{token}/{file_path}"
 
 

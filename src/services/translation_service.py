@@ -1,8 +1,9 @@
 from deep_translator import GoogleTranslator
 from langdetect import detect
-from utils.logger import get_logger
+from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
+
 
 def translate_to_english(text: str) -> str:
     """Translate Hindi (or auto-detected language) to English."""

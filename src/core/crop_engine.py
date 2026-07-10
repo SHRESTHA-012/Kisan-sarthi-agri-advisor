@@ -1,14 +1,12 @@
 import json
 import os
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE       = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 _DATA_PATH = os.path.join(BASE, "data", "bihar_crops.json")
 
-# Load once
 with open(_DATA_PATH, "r", encoding="utf-8") as f:
     _CROPS = json.load(f)["crops"]
 
-# Quick lookup by crop_id
 _CROP_BY_ID = {c["id"]: c for c in _CROPS}
 
 
@@ -43,18 +41,14 @@ def get_crop_advice(crop_id: str) -> str:
     fert   = crop.get("fertilizer", {})
     basal  = fert.get("basal", {})
 
-    lines = [
-        f"🌾 {crop['name_hi']} ({crop['name_en']}) — {crop['season'].upper()} फसल\n",
-    ]
+    lines = [f"🌾 {crop['name_hi']} ({crop['name_en']}) — {crop['season'].upper()} फसल\n"]
 
-    # Varieties
     varieties = crop.get("popular_varieties", [])[:2]
     if varieties:
         lines.append("📌 अच्छी किस्में:")
         for v in varieties:
             lines.append(f"  • {v['variety']} — {v.get('features','')}, {v.get('duration_days', v.get('duration_months',''))} दिन")
 
-    # Sowing
     period = sowing.get("optimal_period") or f"महीना: {sowing.get('nursery_month', '')}"
     lines.append(f"\n🗓️ बुवाई का समय: {period}")
 
@@ -63,10 +57,8 @@ def get_crop_advice(crop_id: str) -> str:
         unit = "kg" if "kg" in str(sowing) else "ton"
         lines.append(f"🌱 बीज दर: {seed_rate} {unit} प्रति एकड़")
 
-    # Soil
     lines.append(f"🪴 मिट्टी: {', '.join(soil.get('type', []))}, pH {soil.get('ph_range', [])}")
 
-    # Fertilizer
     fert_parts = []
     if basal.get("DAP_kg_per_acre"):
         fert_parts.append(f"DAP {basal['DAP_kg_per_acre']} kg")
@@ -79,7 +71,6 @@ def get_crop_advice(crop_id: str) -> str:
     if top:
         lines.append(f"   टॉप ड्रेसिंग: यूरिया {top[0].get('urea_kg_per_acre', '')} kg — {top[0].get('stage', '')}")
 
-    # MSP
     msp = crop.get("msp_2024_25_per_qtl")
     if msp:
         lines.append(f"\n💰 MSP 2024-25: ₹{msp} प्रति क्विंटल")
@@ -87,6 +78,6 @@ def get_crop_advice(crop_id: str) -> str:
     return "\n".join(lines)
 
 
-# ── Legacy alias kept so chatbot.py doesn't break ─────────────────────────────
+# Legacy alias — keeps advisory_engine.py and chatbot.py working
 def get_crops(district: str, season: str) -> list[str]:
     return get_crops_by_district(district, season)
