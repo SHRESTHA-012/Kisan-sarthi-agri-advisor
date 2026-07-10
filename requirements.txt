@@ -20,3 +20,4 @@ ollama
 
 deep_translator
 langdetect
+groq==0.4.1
