@@ -20,4 +20,5 @@ ollama
 
 deep_translator
 langdetect
-groq==0.4.1
+groq==0.11.0
+httpx==0.27.2
