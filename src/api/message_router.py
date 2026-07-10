@@ -40,10 +40,13 @@ async def route_message(
                 return await _dispatch_command(command, text, session)
             return await _handle_text_by_state(session, text)
     except Exception as exc:
-        logger.exception("Error routing message from user %s: %s", user_id, exc)
+        logger.exception("ROUTE_MESSAGE EXCEPTION for user %s: %s", user_id, exc)
         return _err_reply(session.language)
     finally:
-        session_manager.update(session)
+        try:
+            session_manager.update(session)
+        except Exception as e:
+            logger.exception("SESSION_UPDATE EXCEPTION: %s", e)
 
     return _err_reply(session.language)
 

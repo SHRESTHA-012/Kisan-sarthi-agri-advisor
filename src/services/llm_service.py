@@ -1,16 +1,19 @@
 """
-LLM service — all Ollama calls are isolated here.
-To swap Mistral → GPT-4 or Gemini, only this file needs changing.
+LLM service — all Groq calls are isolated here.
+To swap models, only this file needs changing.
 """
 import os
-import ollama
+from groq import Groq
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "mistral")
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_VISION_MODEL = os.getenv("GROQ_VISION_MODEL", "llama-3.2-11b-vision-preview")
 
 
 def chat(messages: list, temperature: float = 0.4, top_p: float = 0.9) -> str:
     """
-    Send a chat request to the local Ollama LLM.
+    Send a chat request to Groq's hosted LLM.
 
     Args:
         messages: List of {role, content} dicts (OpenAI-compatible format)
@@ -20,21 +23,19 @@ def chat(messages: list, temperature: float = 0.4, top_p: float = 0.9) -> str:
     Returns:
         Response string from the model
     """
-    response = ollama.chat(
-        model=OLLAMA_MODEL,
-        options={
-            "num_ctx":     2048,
-            "temperature": temperature,
-            "top_p":       top_p,
-        },
+    response = client.chat.completions.create(
+        model=GROQ_MODEL,
+        temperature=temperature,
+        top_p=top_p,
+        max_tokens=512,
         messages=messages,
     )
-    return response["message"]["content"]
+    return response.choices[0].message.content
 
 
 def vision_chat(prompt: str, image_b64: str, temperature: float = 0.2) -> str:
     """
-    Send an image + prompt to the Ollama vision model (LLaVA).
+    Send an image + prompt to Groq's vision model.
 
     Args:
         prompt: Text prompt to accompany the image
@@ -44,13 +45,16 @@ def vision_chat(prompt: str, image_b64: str, temperature: float = 0.2) -> str:
     Returns:
         Response string from the vision model
     """
-    response = ollama.chat(
-        model="llava",
+    response = client.chat.completions.create(
+        model=GROQ_VISION_MODEL,
+        temperature=temperature,
+        max_tokens=512,
         messages=[{
-            "role":    "user",
-            "content": prompt,
-            "images":  [image_b64],
+            "role": "user",
+            "content": [
+                {"type": "text", "text": prompt},
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_b64}"}},
+            ],
         }],
-        options={"temperature": temperature},
     )
-    return response["message"]["content"]
+    return response.choices[0].message.content
