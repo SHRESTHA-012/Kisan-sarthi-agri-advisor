@@ -2,6 +2,16 @@
 
 A Telegram-based agricultural advisory assistant for farmers in Bihar. Combines retrieval-augmented generation (RAG) over unstructured knowledge (government schemes, disease guides) with structured lookups (crop data, MSP prices, weather thresholds) and image-based pest detection, delivered in the farmer's own language.
 
+## Demo
+ 
+**kisan_sarthi** on Telegram — real conversation, live weather + seasonal advice generated per query:
+ 
+![Kisan Sarthi Telegram bot search result](docs/screenshots/telegram-search.png)
+ 
+![Kisan Sarthi conversation — weather-aware crop advice and seasonal cotton guidance](docs/screenshots/telegram-conversation.png)
+ 
+*The bot detects the current season from the date, pulls live weather for the farmer's district, and gives crop-specific timing advice — e.g. correctly explaining that cotton isn't a Kharif-season crop for the district and pointing the farmer to Rabi/October–November timing instead.*
+
 ## Table of contents
 
 - [High-level architecture](#high-level-architecture)
